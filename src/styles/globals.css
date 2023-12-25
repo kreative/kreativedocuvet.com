@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-Regular.woff2") format("woff2"),
+      url("/fonts/Satoshi-Regular.woff") format("woff"),
+      url("/fonts/Satoshi-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-Italic.woff2") format("woff2"),
+      url("/fonts/Satoshi-Italic.woff") format("woff"),
+      url("/fonts/Satoshi-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+      url("/fonts/Satoshi-Medium.woff") format("woff"),
+      url("/fonts/Satoshi-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+      url("/fonts/Satoshi-MediumItalic.woff") format("woff"),
+      url("/fonts/Satoshi-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-Bold.woff2") format("woff2"),
+      url("/fonts/Satoshi-Bold.woff") format("woff"),
+      url("/fonts/Satoshi-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Satoshi;
+    src: url("/fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+      url("/fonts/Satoshi-BoldItalic.woff") format("woff"),
+      url("/fonts/Satoshi-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  html {
+    font-family: Satoshi, system-ui, sans-serif;
+    /* @apply text-horizon-grey-800; */
+  }
+}

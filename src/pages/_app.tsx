@@ -1,128 +1,128 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import CustomFont from "next/font/local";
+import localFont from "next/font/local";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
 
-const satoshi = CustomFont({
+const satoshi = localFont({
   src: [
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Regular.woff",
+      path: "../../public/fonts/Satoshi-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Regular.woff2",
+      path: "../../public/fonts/Satoshi-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Regular.ttf",
+      path: "../../public/fonts/Satoshi-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Regular.eot",
+      path: "../../public/fonts/Satoshi-Regular.eot",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Italic.woff",
+      path: "../../public/fonts/Satoshi-Italic.woff",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Italic.woff2",
+      path: "../../public/fonts/Satoshi-Italic.woff2",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Italic.ttf",
+      path: "../../public/fonts/Satoshi-Italic.ttf",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Italic.eot",
+      path: "../../public/fonts/Satoshi-Italic.eot",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Medium.woff",
+      path: "../../public/fonts/Satoshi-Medium.woff",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Medium.woff2",
+      path: "../../public/fonts/Satoshi-Medium.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Medium.ttf",
+      path: "../../public/fonts/Satoshi-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Medium.eot",
+      path: "../../public/fonts/Satoshi-Medium.eot",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-MediumItalic.woff",
+      path: "../../public/fonts/Satoshi-MediumItalic.woff",
       weight: "500",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-MediumItalic.woff2",
+      path: "../../public/fonts/Satoshi-MediumItalic.woff2",
       weight: "500",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-MediumItalic.ttf",
+      path: "../../public/fonts/Satoshi-MediumItalic.ttf",
       weight: "500",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-MediumItalic.eot",
+      path: "../../public/fonts/Satoshi-MediumItalic.eot",
       weight: "500",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Bold.woff",
+      path: "../../public/fonts/Satoshi-Bold.woff",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Bold.woff2",
+      path: "../../public/fonts/Satoshi-Bold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Bold.ttf",
+      path: "../../public/fonts/Satoshi-Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-Bold.eot",
+      path: "../../public/fonts/Satoshi-Bold.eot",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-BoldItalic.woff",
+      path: "../../public/fonts/Satoshi-BoldItalic.woff",
       weight: "700",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-BoldItalic.woff2",
+      path: "../../public/fonts/Satoshi-BoldItalic.woff2",
       weight: "700",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-BoldItalic.ttf",
+      path: "../../public/fonts/Satoshi-BoldItalic.ttf",
       weight: "700",
       style: "italic",
     },
     {
-      path: "../../public/fonts/Satoshi/Satoshi-BoldItalic.eot",
+      path: "../../public/fonts/Satoshi-BoldItalic.eot",
       weight: "700",
       style: "italic",
     },
@@ -137,7 +137,7 @@ export default function App({ Component, pageProps }: AppProps) {
   ).split("?")[0];
 
   return (
-    <div className={`${satoshi.variable}`}>
+    <div className={`${satoshi.variable} font-sans`}>
       <DefaultSeo
         title={undefined}
         titleTemplate="%s | Kreative DocuVet"

@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@phosphor-icons/react": "^2.0.15",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-seo": "^6.4.0",
     "react": "^18",

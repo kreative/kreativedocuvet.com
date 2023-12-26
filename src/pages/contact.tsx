@@ -53,8 +53,10 @@ export default function Contact() {
                   of our team members on our calendar.
                 </p>
                 <a
-                  href="#"
+                  href="https://calendly.com/kreativedocuvet/kreative-docuvet-demo-clone"
                   className="underline text-lg hover:text-brand-seafoam"
+                  target="_blank"
+                  rel="_noopener"
                 >
                   Schedule a call now
                 </a>
@@ -65,8 +67,7 @@ export default function Contact() {
                 <Note size={50} className="text-brand-seafoam" />
                 <h2 className="text-3xl">Press Inquiries</h2>
                 <p className="text-horizon-grey-600">
-                  Our folks are always ready to help you with any questions or
-                  concerns you may have during business hours.
+                  Any press or media inquiries can be sent to this email. Our team can assist you further from there.
                 </p>
                 <a
                   href="mailto:press@kreativedocuvet.com"

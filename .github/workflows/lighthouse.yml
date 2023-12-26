@@ -22,5 +22,6 @@ jobs:
             ${{ steps.netlify.outputs.url }}/story
             ${{ steps.netlify.outputs.url }}/brand
             ${{ steps.netlify.outputs.url }}/book-demo
+            ${{ steps.netlify.outputs.url }}/faqs
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true

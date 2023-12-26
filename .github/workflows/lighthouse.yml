@@ -19,5 +19,6 @@ jobs:
             ${{ steps.netlify.outputs.url }}
             ${{ steps.netlify.outputs.url }}/contact
             ${{ steps.netlify.outputs.url }}/about
+            ${{ steps.netlify.outputs.url }}/story
           budgetPath: .github/workflows/budget.json
           uploadArtifacts: true

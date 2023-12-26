@@ -10,7 +10,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 export default function Story() {
   return (
     <div>
-      <NextSeo title="" description="" />
+      <NextSeo title="The Story" description="Read our promise to veterinarians and the reasons why we're working hard to craft Kreative DocuVet." />
       <Navbar />
       <Container>
         <div className="w-full md:w-[52%] mx-auto pt-20 pb-20">

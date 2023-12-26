@@ -39,7 +39,7 @@ export default function PopupMenu() {
         </button>
         <button
           className={`pr-1 pl-1 py-1 ${isOpen ? "block" : "hidden"}`}
-          onClick={toggle} // skipcq: JS-0417
+          onClick={() => setIsOpen(false)} // skipcq: JS-0417
           aria-label="Close navigation menu"
         >
           <X size={24} />

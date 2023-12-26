@@ -11,7 +11,7 @@ export default function Contact() {
     <div>
       <NextSeo
         title="Contact Us"
-        description="Contact Kreative Horizon for any questions or concerns, we're here for you!"
+        description="Contact Kreative DocuVet for press, product, billing, or technical inquiries."
       />
       <Navbar />
       <main>

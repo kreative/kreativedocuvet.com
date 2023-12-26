@@ -26,8 +26,9 @@ const config = {
       colors: {
         "brand-forrest": "#076448",
         "brand-deepocean": "#086268",
+        "brand-seafoam": "#13CA93",
         "neutrals-1": "#ffffff",
-        "neutrals-2": "#fdfdfd",
+        "neutrals-2": "#FAFAFA",
         "neutrals-3": "#f6f6f6",
         "neutrals-4": "#f2f1f2",
         "neutrals-5": "#dddddd",

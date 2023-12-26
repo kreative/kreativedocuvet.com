@@ -2,9 +2,9 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -16,15 +16,16 @@ const config = {
         md: "800px",
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
         sans: ["var(--font-satoshi)"],
       },
       colors: {
         "brand-forrest": "#076448",
+        "brand-deepocean": "#086268",
         "neutrals-1": "#ffffff",
         "neutrals-2": "#fdfdfd",
         "neutrals-3": "#f6f6f6",
@@ -39,11 +40,9 @@ const config = {
         "neutrals-12": "#312f30",
         "neutrals-13": "#1f1d1e",
       },
-    }
+    },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
 
 export default config

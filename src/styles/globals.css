@@ -65,6 +65,6 @@
 
   html {
     font-family: Satoshi, system-ui, sans-serif;
-    /* @apply text-horizon-grey-800; */
+    @apply text-neutrals-13;
   }
 }

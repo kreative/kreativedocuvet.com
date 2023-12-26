@@ -1,20 +1,11 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { List, X } from "@phosphor-icons/react";
 import { Dialog } from "@headlessui/react";
 
-function MenuItem({
-  link,
-  name,
-}: {
-  link: string;
-  name: string;
-}) {
+function MenuItem({ link, name }: { link: string; name: string }) {
   return (
-    <Link
-      href={link}
-      className="text-2xl py-2 px-1 text-neutrals-13"
-    >
+    <Link href={link} className="text-2xl py-2 px-1 text-neutrals-13">
       {name}
     </Link>
   );
@@ -22,32 +13,38 @@ function MenuItem({
 
 export default function PopupMenu() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  }
-
-  return (
-    <div>
-      <div>
+  
+  const menuButton = useMemo(
+    () =>
+      !isOpen ? (
         <button
-          className={`pr-1 pl-1 py-1 ${isOpen ? "hidden" : "block"}`}
-          onClick={toggle} // skipcq: JS-0417
+          className={"pr-1 pl-1 py-1"}
+          onClick={() => {
+            console.log("open");
+            setIsOpen(true);
+          }}
           aria-label="Open navigation menu"
         >
           <List size={24} />
         </button>
-        <button
-          className={`pr-1 pl-1 py-1 ${isOpen ? "block" : "hidden"}`}
-          onClick={() => setIsOpen(false)} // skipcq: JS-0417
-          aria-label="Close navigation menu"
-        >
+      ) : (
+        <button className={"pr-1 pl-1 py-1"} aria-label="Close navigation menu">
           <X size={24} />
         </button>
-      </div>
+      ),
+    [isOpen]
+  );
+  return (
+    <div>
+      <div>{menuButton}</div>
       <Dialog
         open={isOpen}
-        onClose={() => setIsOpen(false)} // skipcq: JS-0417
+        onClose={() => {
+          console.log("close");
+          setTimeout(() => {
+            setIsOpen(false);
+          }, 0);
+        }} // skipcq: JS-0417
         className="relative z-50"
       >
         <div className="fixed inset-0 flex items-start justify-start p-4 top-[4rem]">

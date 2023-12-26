@@ -16,9 +16,9 @@ export default function Contact() {
       <Navbar />
       <main>
         <Container>
-          <div className="pt-24 pb-12 grid grid-cols-12 gap-0">
+          <div className="pt-12 md:pt-24 pb-12 grid grid-cols-12 gap-0">
             <div className="col-span-12 sm:col-span-9 md:col-span-6">
-              <h1 className="text-5xl text-left font-medium tracking-tighter">
+              <h1 className="text-4xl md:text-5xl text-left font-medium tracking-tighter">
                 Drop us a line and we&apos;ll be in touch with you very soon
               </h1>
               <p className="text-lg text-neutrals-8 mt-8">
@@ -78,7 +78,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="bg-neutrals-2 border border-neutrals-5 rounded-3xl py-16 px-8 sm:p-12 mt-4 mb-24">
+          <div className="bg-neutrals-2 border border-neutrals-5 rounded-3xl py-8 md:py-16 px-8 sm:p-12 mt-4 mb-24">
             <div className="grid grid-cols-12 gap-0 ">
               <div className="col-span-12 sm:col-span-7 flex flex-col justify-center space-y-2">
                 <h2 className="text-[32px] lg:text-[40px] font-medium tracking-tight">

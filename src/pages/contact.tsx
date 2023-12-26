@@ -17,7 +17,7 @@ export default function Contact() {
       <main>
         <Container>
           <div className="pt-24 pb-12 grid grid-cols-12 gap-0">
-            <div className="col-span-12 md:col-span-6">
+            <div className="col-span-12 sm:col-span-9 md:col-span-6">
               <h1 className="text-5xl text-left font-medium tracking-tighter">
                 Drop us a line and we&apos;ll be in touch with you very soon
               </h1>
@@ -25,7 +25,7 @@ export default function Contact() {
                 Mon - Fri 9:00 AM- 6:00 PM CST
               </p>
             </div>
-            <div className="col-span-12 md:col-span-6" />
+            <div className="col-span-12 sm:col-span-3 md:col-span-6" />
           </div>
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 md:col-span-6 lg:col-span-4">

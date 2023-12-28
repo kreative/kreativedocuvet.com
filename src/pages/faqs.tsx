@@ -4,7 +4,46 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, Minus, Plus } from "@phosphor-icons/react";
+import { Disclosure } from "@headlessui/react";
+
+const faqs = [
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+];
 
 function FAQ({ q, a }: { q: string; a: string }) {
   return (
@@ -56,27 +95,42 @@ export default function BookDemo() {
               </motion.div>
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-7 pt-2 space-y-12">
-            <FAQ
-              q="How many hours does DocuVet usually save veterinarians?"
-              a="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <FAQ
-              q="How many hours does DocuVet usually save veterinarians?"
-              a="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <FAQ
-              q="How many hours does DocuVet usually save veterinarians?"
-              a="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <FAQ
-              q="How many hours does DocuVet usually save veterinarians?"
-              a="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <FAQ
-              q="How many hours does DocuVet usually save veterinarians?"
-              a="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
+          <div className="col-span-12 lg:col-span-7">
+            <dl className="space-y-6 divide-y divide-gray-900/10">
+              {faqs.map((faq) => (
+                <Disclosure as="div" key={faq.question} className="pt-6">
+                  {({ open }) => (
+                    <>
+                      <dt>
+                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                          <span className="text-2xl tracking-tight font-bold leading-7 text-brand-forrest">
+                            {faq.question}
+                          </span>
+                          <span className="ml-6 flex h-7 items-center">
+                            {open ? (
+                              <Minus
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
+                            ) : (
+                              <Plus
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
+                            )}
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                        <p className="text-lg pt-4">
+                          {faq.answer}
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
           </div>
         </div>
       </Container>

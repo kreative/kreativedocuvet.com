@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config = {
   content: [
@@ -16,6 +16,10 @@ const config = {
         md: "800px",
       },
       backgroundImage: {
+        "hero-gradient":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp')",
+        "cta-gradient":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1703710705/kreativedocuvet.com/Gradient_background_gbseps.webp')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -48,4 +52,4 @@ const config = {
   plugins: [require("@tailwindcss/typography")],
 };
 
-export default config
+export default config;

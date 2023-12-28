@@ -52,27 +52,29 @@ export default function About() {
           </div>
           <div className="col-span-2 lg:col-span-1">
             <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Fermentum leo vel orci porta non pulvinar neque laoreet
-              suspendisse. Sodales neque sodales ut etiam sit amet nisl purus
-              in. Fermentum posuere urna nec tincidunt. Placerat duis ultricies
-              lacus sed turpis tincidunt.
+              We believe that everyone should have access to tools that improve
+              lives and alleviate stress, and veterinarians are no different.
+              Our story started when we realized that veterinarians were being
+              left behind in the digital age. Two of our cofounders, Rozann
+              (equine veterinarian) and Armaan (software engineer), discussed
+              the lack of innovation in the veterinary space.
               <br />
               <br />
-              Mauris pellentesque pulvinar pellentesque habitant morbi tristique
-              senectus et. Odio euismod lacinia at quis risus sed vulputate
-              odio. Sed viverra ipsum nunc aliquet bibendum enim facilisis
-              gravida neque. Neque convallis a cras semper auctor neque.
-              Ultricies mi quis hendrerit dolor.
+              Rozann was tired of using outdated software that was clunky, slow,
+              and difficult to use. She tried multiple different software
+              platforms to get their job done. She was tired of having to use
+              software that was built for human doctors, not veterinarians. Or
+              if it was for veterinarians, it was tailor made for small animal
+              veterinarians, and left equine and large animal practices behind.
               <br />
               <br />
-              Placerat duis ultricies lacus sed turpis tincidunt. Mauris
-              pellentesque pulvinar pellentesque habitant morbi tristique
-              senectus et. Odio euismod lacinia at quis risus sed vulputate
-              odio. Sed viverra ipsum nunc aliquet bibendum enim facilisis
-              gravida neque. Neque convallis a cras semper auctor neque.
-              Ultricies mi quis hendrerit dolor.
+              Together with our other cofounders, Charles and Conner (software
+              engineers), we started Kreative DocuVet to build the tools that
+              veterinarians will love to use. Our focus is on intuitive design
+              that complements a veterinarian&apos;s workflow, not hinders it.
+              We&apos;re bringing game changing technologies like Artificial
+              Intelligence to help veterinarians increase efficiency and get
+              home on time.
             </p>
           </div>
         </div>
@@ -90,12 +92,11 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-2 gap-8">
             <div className="col-span-2 md:col-span-1 space-y-8">
-              <Accomplishment description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-              <Accomplishment description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+              <Accomplishment description="Kreative DocuVet won second place at the Rough Draft Ventures / General Catalyst End of Year Pitch Competition in November." />
+              <Accomplishment description="We have polled over 115 everyday veterinarians and interviewed over 20 (and counting) to ensure Kreative DocuVet works for vets." />
             </div>
             <div className="col-span-2 md:col-span-1 space-y-8">
-              <Accomplishment description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-              <Accomplishment description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+              <Accomplishment description="Kreative DocuVet advanced to round 2 for the Baylor New Venture Competition, being placed in the Top 50 from businesses across the country." />
             </div>
           </div>
           <div className="grid grid-cols-12 px-6 py-4 border-2 border-white bg-white bg-opacity-30 rounded-2xl mt-24 gap-4">

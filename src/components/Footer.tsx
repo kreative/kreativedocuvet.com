@@ -98,8 +98,14 @@ export default function Footer() {
                     href="https://twitter.com/kreativedocuvet"
                     title="Twitter"
                   />
-                  <FooterLink href="#" title="Facebook" />
-                  <FooterLink href="#" title="LinkedIn" />
+                  <FooterLink
+                    href="https://facebook.com/kreativedocuvet"
+                    title="Facebook"
+                  />
+                  <FooterLink
+                    href="https://www.linkedin.com/company/kreativedocuvet"
+                    title="LinkedIn"
+                  />
                 </div>
               </div>
             </div>

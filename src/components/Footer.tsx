@@ -76,7 +76,7 @@ export default function Footer() {
               <FooterLinkGroupLabel title="Discover" />
               <div className="flex flex-col items-start space-y-4 lg:space-y-2">
                 <FooterLink href="/about" title="Company" />
-                <FooterLink href="/story" title="Story" />
+                <FooterLink href="/our-promise" title="Our Promise" />
                 <FooterLink href="/faqs" title="Faqs" />
                 <FooterLink href="/contact" title="Contact" />
                 <FooterLink href="/brand" title="Brand" />

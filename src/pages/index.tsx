@@ -12,7 +12,10 @@ import Marquee from "react-fast-marquee";
 export default function Home() {
   return (
     <div>
-      <NextSeo title="Welcome to Kreative DocuVet" description="" />
+      <NextSeo
+        title="Welcome to Kreative DocuVet"
+        description="Kreative DocuVet is an AI-powered scribe helping veterinarians get home on time, one record at a time. Discover why vets are switching, book your demo today."
+      />
       <Navbar />
       <SplashContainer>
         <div className="bg-hero-gradient pt-32 pb-44 bg-cover bg-bottom">
@@ -682,15 +685,15 @@ export default function Home() {
           />
         </Container>
       </div>
-      <div className="bg-cta-gradient py-44 bg-center bg-cover">
+      <div className="bg-cta-gradient py-44 bg-left sm:bg-center bg-cover">
         <Container>
-          <div className="w-full sm:w-[75%] md2:w-[50%] mx-auto flex flex-col items-center">
+          <div className="w-full sm:w-[75%] md2:w-[65%] mx-auto flex flex-col items-center">
             <div className="pb-8">
               <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
                 Lorem ipsum here
               </span>
             </div>
-            <h2 className="text-[40px] font-bold tracking-tighter text-center leading-[3rem] mb-8">
+            <h2 className="text-5xl lg:text-[60px] font-bold tracking-tighter text-center leading-[3.8rem] lg:leading-[4.2rem] mb-8">
               Discover how Kreative DocuVet is bringing joy to the everyday
               veterinarian.
             </h2>

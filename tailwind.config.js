@@ -13,9 +13,16 @@ const config = {
     },
     extend: {
       screens: {
+        sm2: "750px",
         md: "800px",
+        md2: "900px",
       },
       backgroundImage: {
+        placeholder: "url('/images/placeholder.png')",
+        surgeon:
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704217372/kreativedocuvet.com/Surgery_Photo_oehdcg.webp')",
+        "female-vet":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704217348/kreativedocuvet.com/Vet_portrait_wmkn1y.webp')",
         "hero-gradient":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp')",
         "cta-gradient":

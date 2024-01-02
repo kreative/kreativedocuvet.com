@@ -79,6 +79,22 @@ export default function About() {
           </div>
         </div>
       </Container>
+      <Container>
+        <div className="grid grid-cols-12 gap-4 pb-24">
+          <div className="col-span-12 md2:col-span-4 order-2 md2:order-1 rounded-[20px] bg-about-page-mockup bg-cover bg-center min-h-[500px] sm:min-h-[700px] md2:min-h-0" />
+          <div className="col-span-12 md2:col-span-8 order-1 md2:order-2 rounded-[20px] bg-brand-deepocean py-12 px-8">
+            <span className="text-white px-4 py-[6px] rounded-full border border-white">
+              Our mission
+            </span>
+            <h2 className="text-white text-5xl font-medium mt-4 tracking-tight pb-16 pt-4">
+              Advance veterinary practice with tools that veterinarians will actually love to use
+            </h2>
+            <p className="text-white text-xl">
+              To help them get home on time, grow their practice, maxmimize patient outcomes, and go back to doing their life&apos;s work.
+            </p>
+          </div>
+        </div>
+      </Container>
       <div className="bg-seafoam-50 py-24">
         <Container>
           <div className="mb-8">

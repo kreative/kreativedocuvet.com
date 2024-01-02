@@ -21,6 +21,8 @@ const config = {
         placeholder: "url('/images/placeholder.png')",
         surgeon:
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704217372/kreativedocuvet.com/Surgery_Photo_oehdcg.webp')",
+        "about-page-mockup":
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704230419/kreativedocuvet.com/ezgif.com-png-to-webp-converter_rd41d1.webp')",
         "female-vet":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704217348/kreativedocuvet.com/Vet_portrait_wmkn1y.webp')",
         "hero-gradient":

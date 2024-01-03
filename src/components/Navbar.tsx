@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="bg-white bg-opacity-80 backdrop-blur-sm border border-neutrals-5 py-1.5 px-2 my-3 rounded-[10px] flex items-center justify-between min-[870px]:justify-center space-x-6 w-full min-[870px]:w-auto">
             <Link href="/" aria-label={"Home page"}>
               <svg
-                className="h-10 w-auto drop-shadow-md"
+                className="h-10 w-auto"
                 viewBox="0 0 264 264"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

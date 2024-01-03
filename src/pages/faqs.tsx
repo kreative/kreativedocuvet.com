@@ -60,7 +60,7 @@ export default function BookDemo() {
   return (
     <div>
       <NextSeo
-        title="Frequently asked questions"
+        title="Frequently Asked Questions"
         description="You have questions and we have answers. Review Kreative DocuVet's frequently asked questions to learn more about our product."
       />
       <Navbar />

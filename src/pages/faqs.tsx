@@ -9,39 +9,39 @@ import { Disclosure } from "@headlessui/react";
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "What is Kreative DocuVet?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Kreative DocuVet is an AI powered veterinary scribe that allows small and large animal veterinarians create medical records from raw appointment audio. From the un-edited appointment audio recorded ambiently in the background, our AI can create a complete medical record veterinarians can review in minutes."
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "How does Kreative DocuVet work?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Our AI understands natural language, veterinary medicine, and animal specific context, so any veterinarian can utilize our platform for their practice. All veterinarians have to do is create an appointment, select a patient, and hit record. When they're done, they hit stop, and our AI pulls out key information and context to produce a medical record they can push to their Patient Management Systems in minutes."
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Does Kreative DocuVet work for small and large animal veterinarians?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Yes, our AI understands both small and large animal veterinary medicine. We're currently working on expanding our AI to understand exotic animal medicine as well to ensure Kreative DocuVet is inclusive for all veterinary disciplines."
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "What is ambient recording?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Ambient recording is the process of recording audio in the background of an appointment. Our AI then processes the audio to pull out key information and context to produce a medical record. This allows veterinarians to focus on their patients and clients, rather than taking notes."
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "How do I get started?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Getting started is easy. All you have to do is book a demo and we'll walk you through how Kreative DocuVet can work for your practice!"
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Does Kreative DocuVet integrate with my Patient Management System?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Currently, Kreative DocuVet provides a generated medical record with editing capabilities. We're working on integrating with the most popular Patient Management Systems to allow veterinarians to push their medical records directly to their PM systems."
   },
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Why is Kreative DocuVet better than hiring a scribe?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Kreative DocuVet is a fraction of the cost of hiring a scribe. We also provide a more accurate medical record, as our AI is trained to understand veterinary medicine and animal specific context. And, the best part is that you don't have to compromise on your clinic specific template or record format - Kreative DocuVet can be customized to fit your specific clinic's needs."
   },
 ];
 

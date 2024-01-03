@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, ArrowUpRight, Butterfly } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck } from "@phosphor-icons/react";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
@@ -33,9 +33,11 @@ export default function Home() {
               height={1200}
             />
             <p className="text-xl font-medium w-[75%] lg:w-[50%] text-center mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam,
+              <span className="font-bold">
+                Go from 30 minutes per record to 30 seconds.
+              </span>{" "}
+              Veterinarians are leveraging our AI to cut down on recordkeeping
+              and go back to doing what they love.
             </p>
             <div className="flex justify-start items-center">
               <motion.div
@@ -62,21 +64,22 @@ export default function Home() {
           <div className="col-span-2 md:col-span-1">
             <div className="rounded-[20px] bg-brand-forrest py-12 px-8 mb-4">
               <span className="text-white px-4 py-[6px] rounded-full border border-white">
-                Supercharge your clinic
+                Supercharge your clinic ⚡
               </span>
               <h2 className="text-white text-5xl font-medium mt-4 tracking-tight pb-8 pt-4">
                 We&apos;re helping everyday veterinarians get home on time, one
-                record at a night
+                record at a time.
               </h2>
               <p className="text-white text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our cross-platform software is helping small and large animal
+                veterinarians stress less, save time, unlock more appointments,
+                and take those lunch breaks.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2 xs:col-span-1 min-h-[250px] bg-surgeon bg-cover bg-center rounded-[20px]" />
               <div className="col-span-2 xs:col-span-1 rounded-[20px] bg-brand-deepocean py-12 px-8">
-                <h2 className="text-white text-7xl sm:text-9xl md:text-8xl lg:text-9xl font-medium tracking-tight pb-4 text-center">
+                <h2 className="text-white text-7xl sm:text-9xl md:text-8xl lg:text-9xl font-bold tracking-tighter pb-4 text-center">
                   7.5
                 </h2>
                 <p className="text-white text-xl italic text-center">
@@ -91,61 +94,69 @@ export default function Home() {
       <div className="pt-24 pb-32 sm:pb-48 bg-gradient-to-b from-white to-neutrals-2">
         <Container>
           <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
-            Lorem ipsum right here
+            The problems 😔😡🥱
           </span>
-          <h2 className="text-5xl font-bold mt-4 tracking-tighter pb-12 pt-4 w-full sm:w-3/4 lg:w-1/2">
+          <h2 className="text-5xl font-bold mt-4 leading-[3.5rem] tracking-tighter pb-24 pt-4 w-full sm:w-3/4 lg:w-1/2">
             If you&apos;re a veterinarian running into issues like...
           </h2>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="col-span-3 md:col-span-1 flex space-x-6">
-              <svg
-                className="h-20 xs:h-12 md:h-32 lg:h-24 w-auto mt-0 md:-mt-4 lg:mt-0"
-                viewBox="0 0 35 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="17.5" cy="17.5" r="17.5" fill="#076448" />
-                <path
-                  d="M17.74 12.3H14.7V10.54H19.62V25H17.74V12.3Z"
-                  fill="white"
-                />
-              </svg>
-              <h3 className="text-3xl font-medium pt-4 xs:pt-0 md:pt-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <div className="grid grid-cols-3 gap-16 md2:gap-8">
+            <div className="col-span-3 md2:col-span-1 grid grid-cols-6 sm:grid-cols-8 md2:grid-cols-5 gap-4">
+              <div className="col-span-1 flex justify-center">
+                <svg
+                  className="h-12 w-auto"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#076448" />
+                  <path
+                    d="M17.74 12.3H14.7V10.54H19.62V25H17.74V12.3Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <h3 className="col-span-5 md2:col-span-4 text-3xl font-medium pl-4">
+                Back to back appointments that go beyond the 9-5
               </h3>
             </div>
-            <div className="col-span-3 md:col-span-1 flex space-x-6">
-              <svg
-                className="h-20 xs:h-12 md:h-32 lg:h-24 w-auto mt-0 md:-mt-4 lg:mt-0"
-                viewBox="0 0 35 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="17.5" cy="17.5" r="17.5" fill="#086268" />
-                <path
-                  d="M22.68 24.98L12.92 25V23.5L17.58 19.48C19.92 17.46 20.58 16.48 20.58 14.94C20.58 13.12 19.54 12.04 17.8 12.04C16.02 12.04 14.86 13.34 14.82 15.4H12.86C12.92 12.3 14.88 10.28 17.82 10.28C20.72 10.28 22.58 12.04 22.58 14.82C22.58 16.88 21.56 18.34 19 20.56L16 23.16H22.68V24.98Z"
-                  fill="white"
-                />
-              </svg>
-              <h3 className="text-3xl font-medium pt-4 xs:pt-0 md:pt-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div className="col-span-3 md2:col-span-1 grid grid-cols-6 sm:grid-cols-8 md2:grid-cols-5 gap-4">
+              <div className="col-span-1 hidden sm:block md2:hidden" />
+              <div className="col-span-1 flex justify-center">
+                <svg
+                  className="h-12 w-auto"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#086268" />
+                  <path
+                    d="M22.68 24.98L12.92 25V23.5L17.58 19.48C19.92 17.46 20.58 16.48 20.58 14.94C20.58 13.12 19.54 12.04 17.8 12.04C16.02 12.04 14.86 13.34 14.82 15.4H12.86C12.92 12.3 14.88 10.28 17.82 10.28C20.72 10.28 22.58 12.04 22.58 14.82C22.58 16.88 21.56 18.34 19 20.56L16 23.16H22.68V24.98Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <h3 className="col-span-5 md2:col-span-4 text-3xl font-medium pl-4">
+                Struggling to get through your medical records
               </h3>
             </div>
-            <div className="col-span-3 md:col-span-1 flex space-x-6">
-              <svg
-                className="h-20 xs:h-12 md:h-32 lg:h-24 w-auto mt-0 md:-mt-4 lg:mt-0"
-                viewBox="0 0 35 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="17.5" cy="17.5" r="17.5" fill="#780505" />
-                <path
-                  d="M17.12 17.52H15.68V16.22L19.78 12.28H13.28V10.54H22.26V12.12L18.3 15.9C20.76 16.2 22.62 17.86 22.62 20.46C22.62 23.38 20.42 25.24 17.48 25.24C14.64 25.24 12.6 23.5 12.6 20.5H14.54C14.54 22.38 15.7 23.48 17.52 23.48C19.4 23.48 20.62 22.28 20.62 20.42C20.62 18.68 19.42 17.52 17.12 17.52Z"
-                  fill="white"
-                />
-              </svg>
-              <h3 className="text-3xl font-medium pt-4 xs:pt-0 md:pt-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div className="col-span-3 md2:col-span-1 grid grid-cols-6 sm:grid-cols-8 md2:grid-cols-5 gap-4">
+              <div className="col-span-2 hidden sm:block md2:hidden" />
+              <div className="col-span-1 flex justify-center">
+                <svg
+                  className="h-12 w-auto"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#780505" />
+                  <path
+                    d="M17.12 17.52H15.68V16.22L19.78 12.28H13.28V10.54H22.26V12.12L18.3 15.9C20.76 16.2 22.62 17.86 22.62 20.46C22.62 23.38 20.42 25.24 17.48 25.24C14.64 25.24 12.6 23.5 12.6 20.5H14.54C14.54 22.38 15.7 23.48 17.52 23.48C19.4 23.48 20.62 22.28 20.62 20.42C20.62 18.68 19.42 17.52 17.12 17.52Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <h3 className="col-span-5 md2:col-span-4 text-3xl font-medium pl-4">
+                Dull clinic improvements and staff experience
               </h3>
             </div>
           </div>
@@ -153,15 +164,31 @@ export default function Home() {
       </div>
       <Marquee className="bg-neutrals-13 py-1" autoFill speed={75}>
         <p className="text-white font-bold text-lg mx-8 italic">
-          “I wish I never had to write another medical record again!”
+          &quot;I wish I never had to write another medical record again!&quot;
         </p>
         <p className="text-2xl">🥹</p>
         <p className="text-white font-bold text-lg mx-8 italic">
-          “No more medical records? I wish.”
+          &quot;No more medical records? I wish.&quot;
         </p>
         <p className="text-2xl">😡</p>
         <p className="text-white font-bold text-lg mx-8 italic">
-          “I typically see 15 patients a day, 12 hour days”
+          &quot;I typically see 15 patients a day, easily an 8-10 hour
+          days&quot;
+        </p>
+        <p className="text-2xl">🥱</p>
+        <p className="text-white font-bold text-lg mx-8 italic">
+          &quot;We have high turnover at the clinic and it&apos;s hard to keep
+          up with it&quot;
+        </p>
+        <p className="text-2xl">🥹</p>
+        <p className="text-white font-bold text-lg mx-8 italic">
+          &quot;I don&apos;t think any of us enjoy writing medical records, we
+          just have to do it.&quot;
+        </p>
+        <p className="text-2xl">😡</p>
+        <p className="text-white font-bold text-lg mx-8 italic">
+          &quot;I&apos;d much rather just see patients, paperwork isn&apos;t why
+          I became a veterinarian&quot;
         </p>
         <p className="text-2xl">🥱</p>
       </Marquee>
@@ -175,10 +202,10 @@ export default function Home() {
             </div>
             <div className="col-span-2 md:col-span-1 flex items-end">
               <p className="text-xl text-neutrals-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Our custom built software is tailored specifically for small and
+                large animal veterinarians to reduce the time spent on medical
+                records. With our animal-specific AI, we can help vets cut down
+                time writing medical records by 92%.
               </p>
             </div>
           </div>
@@ -191,11 +218,11 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-[32px] tracking-tight font-medium pb-2">
-                  Another headline here
+                  Select your appointment
                 </h3>
                 <p className="text-xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Or, create one from the mobile or web app quickly. All
+                  appointments are synced across devices and staff.
                 </p>
               </div>
               <div className="flex justify-end sm:justify-center">
@@ -208,7 +235,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="col-span-2 sm:col-span-1 rounded-[20px] bg-neutrals-2 border border-neutrals-5 pt-0 px-8 pb-8 md:px-12 md:pb-12 flex flex-col items-center justify-between space-y-8">
+            <div className="col-span-2 sm:col-span-1 rounded-[20px] bg-neutrals-2 border border-neutrals-5 pt-0 px-8 pb-8 md:px-12 md:pb-12 flex flex-col items-start justify-between space-y-8">
               <div className="flex justify-center">
                 <Image
                   src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703704727/kreativedocuvet.com/Step_2_vks9ug.webp"
@@ -225,11 +252,11 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-[32px] tracking-tight font-medium pb-2">
-                  Another headline here
+                  Click record and start
                 </h3>
                 <p className="text-xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  During your appoinement, the Kreative DocuVet mobile app will
+                  record your appointment ambiently in the background.
                 </p>
               </div>
             </div>
@@ -238,16 +265,16 @@ export default function Home() {
             <div className="mb-8 sm:mb-0 pr-8 sm:pr-0">
               <div className="pb-3">
                 <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
-                  Step 3
+                  Voilà! 🎉
                 </span>
               </div>
               <h3 className="text-[32px] tracking-tight font-medium pb-2">
-                Another headline here
+                Hit save and review
               </h3>
               <p className="text-xl mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor.
+                Our AI sifts through the audio to pull out key context from your
+                appointment. In minutes, you&apos;ll have a completed medical
+                record ready to review in minutes!
               </p>
               <div className="flex justify-start items-center">
                 <motion.div
@@ -285,12 +312,12 @@ export default function Home() {
             <div className="col-span-12 sm:col-span-8 flex flex-col justify-center items-center xs:items-start">
               <div className="pb-6 xs:pb-3">
                 <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
-                  Supercharge your clinic
+                  Discover peace ☺️
                 </span>
               </div>
-              <h2 className="text-3xl xs:text-[40px] tracking-tighter font-bold leading-9 xs:leading-[3rem] mb-6 text-center xs:text-left">
-                Discover how Kreative DocuVet is bringing joy to everyday
-                veterinarians.
+              <h2 className="text-3xl xs:text-[40px] tracking-tighter font-bold leading-9 xs:leading-[3rem] mt-3 mb-8 text-center xs:text-left">
+                Learn how you and your staff can find joy with Kreative DocuVet
+                today.
               </h2>
               <div className="flex justify-center xs:justify-start items-center">
                 <motion.div
@@ -324,28 +351,35 @@ export default function Home() {
       </div>
       <Container>
         <div className="pt-28 pb-32">
-          <div className="w-full xs:w-3/4 md:w-[50%] mx-auto text-center mb-24">
+          <div className="w-full sm:w-3/4 md:w-[50%] mx-auto text-center mb-24">
             <h2 className="text-5xl xs:text-6xl sm:text-[65px] font-bold tracking-tighter leading-[3.2rem] xs:leading-[4rem] mb-6">
               Designed to work the way you do
             </h2>
             <p className="text-neutrals-8 text-xl w-[75%] mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              You won&apos;t have to change a thing about you and your clinic
+              works right now.
             </p>
           </div>
           <div className="hidden sm2:grid grid-cols-3 gap-8">
             <div className="col-span-1 space-y-24 pt-32">
               <div className="flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Devices size={84} className="text-brand-forrest" />
                 <p className="text-xl text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Meets you anywhere.
+                  </span>{" "}
+                  Whether you&apos;re on an iPhone, Android, or desktop,
+                  we&apos;re cross platform.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Heart size={84} className="text-brand-forrest" />
                 <p className="text-xl text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Beautiful yet simple.
+                  </span>{" "}
+                  We promise you won&apos;t find a better looking piece of
+                  veterinary software.
                 </p>
               </div>
             </div>
@@ -358,10 +392,13 @@ export default function Home() {
                 className="w-[85%] md2:w-[75%] mx-auto pb-16"
               />
               <div className="flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <FilmReel size={84} className="text-brand-forrest" />
                 <p className="text-xl text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Out of the way.
+                  </span>{" "}
+                  DocuVet listens in the background with no fuss - you&apos;ll
+                  forget it&apos;s there.
                 </p>
                 <div className="flex justify-start items-center">
                   <motion.div
@@ -386,17 +423,23 @@ export default function Home() {
             </div>
             <div className="col-span-1 space-y-24 pt-32">
               <div className="flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Handshake size={84} className="text-brand-forrest" />
                 <p className="text-xl text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Bring your team.
+                  </span>{" "}
+                  Keep track of records across the clinic and allow your techs
+                  to manage appointments.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <CloudCheck size={84} className="text-brand-forrest" />
                 <p className="text-xl text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Forget nothing.
+                  </span>{" "}
+                  Every recording, transcript, and medical record in the cloud
+                  for you, forever.
                 </p>
               </div>
             </div>
@@ -404,10 +447,13 @@ export default function Home() {
           <div className="hidden sm:block sm2:hidden">
             <div className="grid grid-cols-3 gap-8">
               <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Devices size={84} className="text-brand-forrest" />
                 <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Meets you anywhere.
+                  </span>{" "}
+                  Whether you&apos;re on an iPhone, Android, or desktop,
+                  we&apos;re cross platform.
                 </p>
               </div>
               <div className="col-span-1">
@@ -420,33 +466,45 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-1 flex flex-col justify-end items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Handshake size={84} className="text-brand-forrest" />
                 <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Bring your team.
+                  </span>{" "}
+                  Keep track of records across the clinic and allow your techs
+                  to manage appointments.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-8 mt-16">
               <div className="col-span-1 flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <Heart size={84} className="text-brand-forrest" />
                 <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Beautiful yet simple.
+                  </span>{" "}
+                  We promise you won&apos;t find a better looking piece of
+                  veterinary software.
                 </p>
               </div>
               <div className="col-span-1 flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <FilmReel size={84} className="text-brand-forrest" />
                 <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Out of the way.
+                  </span>{" "}
+                  DocuVet listens in the background with no fuss - you&apos;ll
+                  forget it&apos;s there.
                 </p>
               </div>
               <div className="col-span-1 flex flex-col items-center space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
+                <CloudCheck size={84} className="text-brand-forrest" />
                 <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  <span className="font-bold text-brand-deepocean">
+                    Forget nothing.
+                  </span>{" "}
+                  Every recording, transcript, and medical record in the cloud
+                  for you, forever.
                 </p>
               </div>
             </div>
@@ -473,17 +531,23 @@ export default function Home() {
           <div className="block sm:hidden">
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
-                <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                <Devices size={84} className="text-brand-forrest" />
+                <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
+                  <span className="font-bold text-brand-deepocean">
+                    Meets you anywhere.
+                  </span>{" "}
+                  Whether you&apos;re on an iPhone, Android, or desktop,
+                  we&apos;re cross platform.
                 </p>
               </div>
               <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
-                <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                <Handshake size={84} className="text-brand-forrest" />
+                <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
+                  <span className="font-bold text-brand-deepocean">
+                    Bring your team.
+                  </span>{" "}
+                  Keep track of records across the clinic and allow your techs
+                  to manage appointments.
                 </p>
               </div>
             </div>
@@ -498,24 +562,33 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
-                <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                <Heart size={84} className="text-brand-forrest" />
+                <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
+                  <span className="font-bold text-brand-deepocean">
+                    Beautiful yet simple.
+                  </span>{" "}
+                  We promise you won&apos;t find a better looking piece of
+                  veterinary software.
                 </p>
               </div>
               <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
-                <Butterfly size={84} className="text-brand-forrest" />
-                <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                <FilmReel size={84} className="text-brand-forrest" />
+                <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
+                  <span className="font-bold text-brand-deepocean">
+                    Out of the way.
+                  </span>{" "}
+                  DocuVet listens in the background with no fuss - you&apos;ll
+                  forget it&apos;s there.
                 </p>
               </div>
               <div className="col-span-2 flex flex-col items-center justify-end space-y-6 w-1/2 mx-auto mt-8">
-                <Butterfly size={84} className="text-brand-forrest" />
-                <p className="text-lg leading-6 text-neutrals-8 text-center w-[90%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                <CloudCheck size={84} className="text-brand-forrest" />
+                <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
+                  <span className="font-bold text-brand-deepocean">
+                    Forget nothing.
+                  </span>{" "}
+                  Every recording, transcript, and medical record in the cloud
+                  for you, forever.
                 </p>
               </div>
             </div>
@@ -541,17 +614,32 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Marquee className="bg-neutrals-13 py-2" autoFill speed={75}>
+      <Marquee className="bg-neutrals-13 py-2" autoFill speed={75} direction="right">
         <p className="text-white font-bold text-xl mx-8 italic">
-          “I wish I never had to write another medical record again!”
+          &quot;It&apos;s like magic!&quot;
         </p>
         <p className="text-2xl">☺️</p>
         <p className="text-white font-bold text-xl mx-8 italic">
-          “No more medical records? I wish.”
+          &quot;Medical records have become a breeze for our clinic&quot;
         </p>
         <p className="text-2xl">😻</p>
         <p className="text-white font-bold text-xl mx-8 italic">
-          “I typically see 15 patients a day, 12 hour days”
+          &quot;It works well and doesn&apos;t get in the way of my
+          patients!&quot;
+        </p>
+        <p className="text-2xl">🥳</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;I wish we had this the last 10 years!&quot;
+        </p>
+        <p className="text-2xl">☺️</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;I&apos;ve been able to knock out records in just a few
+          minutes&quot;
+        </p>
+        <p className="text-2xl">😻</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;Lunch breaks don&apos;t feel guilty anymore, I have the time
+          now!&quot;
         </p>
         <p className="text-2xl">🥳</p>
       </Marquee>
@@ -561,14 +649,15 @@ export default function Home() {
             <div className="col-span-2 md:col-span-1 flex flex-col">
               <div className="pb-8">
                 <span className="text-white px-4 py-[6px] rounded-full border border-white">
-                  Lorem ipsum here
+                  Benefits for you 🏆
                 </span>
               </div>
               <h2 className="text-5xl tracking-tighter font-medium leading-[3rem] mb-6 text-white">
                 Efficiency is possible
               </h2>
-              <p className="text-xl text-neutrals-4 mb-6 md:mb-12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              <p className="text-xl text-neutrals-4 mb-6 md:mb-12 pr-0 sm:pr-32 md:pr-8">
+                How you&apos;ve been doing medical records is not the only way.
+                Kreative DocuVet is the better path forward.
               </p>
               <div className="flex justify-start items-center">
                 <motion.div
@@ -598,10 +687,11 @@ export default function Home() {
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
                   <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
-                    Benefit one
+                    Save time
                   </h3>
                   <p className="text-neutrals-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Don&apos;t spend hours writing medical records anymore.
+                    DocuVet&apos;s got this.
                   </p>
                 </div>
                 <div className="col-span-1">
@@ -610,10 +700,10 @@ export default function Home() {
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
                   <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
-                    Benefit one
+                    Be consistent
                   </h3>
                   <p className="text-neutrals-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    DocuVet formats notes exactly the way you want, every time.
                   </p>
                 </div>
                 <div className="col-span-1">
@@ -622,10 +712,11 @@ export default function Home() {
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
                   <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
-                    Benefit one
+                    Unlock patients
                   </h3>
                   <p className="text-neutrals-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Less time on records = more time with patients, and more
+                    revenue.
                   </p>
                 </div>
                 <div className="col-span-1">
@@ -634,10 +725,11 @@ export default function Home() {
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
                   <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
-                    Benefit one
+                    Stay accurate
                   </h3>
                   <p className="text-neutrals-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    DocuVet remembers everything you talk about, so you
+                    don&apos;t have to.
                   </p>
                 </div>
               </div>
@@ -665,12 +757,11 @@ export default function Home() {
           <div className="w-full sm:w-[75%] md2:w-[65%] mx-auto flex flex-col items-center">
             <div className="pb-8">
               <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
-                Lorem ipsum here
+                Get started for free 👋
               </span>
             </div>
             <h2 className="text-5xl lg:text-[60px] font-bold tracking-tighter text-center leading-[3.8rem] lg:leading-[4.2rem] mb-8">
-              Discover how Kreative DocuVet is bringing joy to the everyday
-              veterinarian.
+              Feel the difference with a 14 day free trial, no credit card required.
             </h2>
             <div className="flex justify-start items-center">
               <motion.div

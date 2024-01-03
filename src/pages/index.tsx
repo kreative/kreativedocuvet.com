@@ -26,9 +26,9 @@ export default function Home() {
               done for you.
             </h1>
             <Image
-              className="w-[60%] mt-16 mb-12 md:mb-24"
-              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703700395/kreativedocuvet.com/hero-placeholder-1_i8gwly.png"
-              alt=""
+              className="w-full sm:w-[80%] mt-16 mb-12 md:mb-24"
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704243167/kreativedocuvet.com/Hero_Mockup_i5af9c.webp"
+              alt="Kreative DocuVet completed medical record mobile app mockup."
               width={500}
               height={1200}
             />
@@ -57,32 +57,6 @@ export default function Home() {
           </div>
         </div>
       </SplashContainer>
-      {/* <Container>
-        <div className="grid grid-cols-2 pb-24 gap-4">
-          <div className="col-span-1 bg-brand-forrest rounded-[20px] py-12 px-8">
-            <span className="text-white px-4 py-[6px] rounded-full border border-white">
-              Supercharge your clinic
-            </span>
-            <h2 className="text-white text-5xl font-medium mt-4 tracking-tight pb-24 pt-4">
-              We&apos;re helping everyday veterinarians get home on time, one
-              record at a night
-            </h2>
-            <p className="text-white text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="col-span-1">
-            <Image
-              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703701466/kreativedocuvet.com/PNG_to_WEBP_conversion_1_kwmilz.webp"
-              alt=""
-              width="550"
-              height="525"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-      </Container> */}
       <Container>
         <div className="grid grid-cols-2 pb-24 gap-4">
           <div className="col-span-2 md:col-span-1">
@@ -227,7 +201,7 @@ export default function Home() {
               <div className="flex justify-end sm:justify-center">
                 <Image
                   src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703704549/kreativedocuvet.com/Step_1_No_Fade_owo2ih.webp"
-                  alt=""
+                  alt="Kreative DocuVet mobile app mockup of single appointment selection screen."
                   width={1056}
                   height={1323}
                   className="w-5/6 xs:w-3/4 sm:w-full lg:w-[75%]"
@@ -238,7 +212,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <Image
                   src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703704727/kreativedocuvet.com/Step_2_vks9ug.webp"
-                  alt=""
+                  alt="Kreative DocuVet mobile app mockup of appointment recording screen."
                   width={1056}
                   height={1392}
                   className="w-full lg:w-[75%]"
@@ -297,7 +271,7 @@ export default function Home() {
             </div>
             <Image
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703705192/kreativedocuvet.com/Step_3_bhaijx.webp"
-              alt=""
+              alt="Kreative DocuVet mobile and website mockup of the completed medical record screens."
               width={1896}
               height={2079}
               className="w-full sm:w-[60%]"
@@ -339,7 +313,7 @@ export default function Home() {
             <div className="col-span-12 sm:col-span-4 flex items-center justify-center xs:justify-end sm:justify-start">
               <Image
                 src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704222567/kreativedocuvet.com/Gradient_Icon_B_szpkyk.webp"
-                alt=""
+                alt="Kreative DocuVet logocon, gradient and hybrid version."
                 className="h-auto w-1/2 xs:w-[40%] sm:w-full mt-0 xs:-mt-16 sm:mt-0"
                 width={332}
                 height={386}
@@ -377,8 +351,8 @@ export default function Home() {
             </div>
             <div className="col-span-1">
               <Image
-                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703705911/kreativedocuvet.com/phoneplaceholder_w8n1jj.png"
-                alt=""
+                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                 width={470}
                 height={1252}
                 className="w-[85%] md2:w-[75%] mx-auto pb-16"
@@ -438,8 +412,8 @@ export default function Home() {
               </div>
               <div className="col-span-1">
                 <Image
-                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703705911/kreativedocuvet.com/phoneplaceholder_w8n1jj.png"
-                  alt=""
+                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                  alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                   width={470}
                   height={1252}
                   className="w-[85%] mx-auto"
@@ -515,8 +489,8 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703705911/kreativedocuvet.com/phoneplaceholder_w8n1jj.png"
-                alt=""
+                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                 width={470}
                 height={1252}
                 className="w-[60%] mx-auto py-16"
@@ -543,26 +517,26 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <div className="flex justify-center items-center mt-8">
-                  <motion.div
-                    whileHover={{
-                      scale: 0.97,
-                      transition: { duration: 0.2 },
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Link
-                      href="/book-demo"
-                      className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
-                      target="_blank"
-                      rel="_noopener"
-                    >
-                      Book a demo
-                      <ArrowUpRight size={20} className="ml-2" />
-                    </Link>
-                  </motion.div>
-                </div>
               </div>
+            </div>
+            <div className="flex justify-center items-center mt-8">
+              <motion.div
+                whileHover={{
+                  scale: 0.97,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  href="/book-demo"
+                  className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
+                  target="_blank"
+                  rel="_noopener"
+                >
+                  Book a demo
+                  <ArrowUpRight size={20} className="ml-2" />
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -671,17 +645,18 @@ export default function Home() {
           </div>
           <Image
             src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704229466/kreativedocuvet.com/PNG_to_WebP_converter_mjnyhk.webp"
-            alt=""
+            alt="Kreative DocuVet web application mockup of the patients list screen."
             width={3375}
             height={1257}
             className="hidden md:block w-full h-auto"
           />
           <Image
             src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704229862/kreativedocuvet.com/ezgif.com-png-to-webp-converter_bjacwb.webp"
-            alt=""
+            alt="Kreative DocuVet mobile application mockup of the patients list screen."
             width={3375}
             height={1257}
-            className="block md:hidden w-full h-auto"
+            // className="block md:hidden w-full h-auto"
+            className="hidden w-full h-auto"
           />
         </Container>
       </div>

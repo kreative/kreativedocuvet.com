@@ -34,7 +34,7 @@ export default function Home() {
             />
             <p className="text-xl font-medium w-[75%] lg:w-[50%] text-center mb-8">
               <span className="font-bold">
-                Go from 30 minutes per record to 30 seconds.
+                Go from 20 minutes per record to 2.
               </span>{" "}
               Veterinarians are leveraging our AI to cut down on recordkeeping
               and go back to doing what they love.
@@ -64,16 +64,19 @@ export default function Home() {
           <div className="col-span-2 md:col-span-1">
             <div className="rounded-[20px] bg-brand-forrest py-12 px-8 mb-4">
               <span className="text-white px-4 py-[6px] rounded-full border border-white">
-                Supercharge your clinic ⚡
+                Say goodbye to stress ✌️
               </span>
-              <h2 className="text-white text-5xl font-medium mt-4 tracking-tight pb-8 pt-4">
+              <h2 className="text-white text-5xl font-medium mt-4 tracking-tight leading-[3.2rem] pb-8 pt-4">
                 We&apos;re helping everyday veterinarians get home on time, one
                 record at a time.
               </h2>
               <p className="text-white text-xl">
                 Our cross-platform software is helping small and large animal
-                veterinarians stress less, save time, unlock more appointments,
-                and take those lunch breaks.
+                veterinarians stress less, save time, stress less, take those
+                lunch breaks,{" "}
+                <span className="italic underline">
+                  all while caring for more patients.
+                </span>
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -116,7 +119,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="col-span-5 md2:col-span-4 text-3xl font-medium pl-4">
-                Back to back appointments that go beyond the 9-5
+                Back to back appointments that go beyond the 8-5
               </h3>
             </div>
             <div className="col-span-3 md2:col-span-1 grid grid-cols-6 sm:grid-cols-8 md2:grid-cols-5 gap-4">
@@ -128,7 +131,7 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="17.5" cy="17.5" r="17.5" fill="#086268" />
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#780505" />
                   <path
                     d="M22.68 24.98L12.92 25V23.5L17.58 19.48C19.92 17.46 20.58 16.48 20.58 14.94C20.58 13.12 19.54 12.04 17.8 12.04C16.02 12.04 14.86 13.34 14.82 15.4H12.86C12.92 12.3 14.88 10.28 17.82 10.28C20.72 10.28 22.58 12.04 22.58 14.82C22.58 16.88 21.56 18.34 19 20.56L16 23.16H22.68V24.98Z"
                     fill="white"
@@ -148,7 +151,7 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="17.5" cy="17.5" r="17.5" fill="#780505" />
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#086268" />
                   <path
                     d="M17.12 17.52H15.68V16.22L19.78 12.28H13.28V10.54H22.26V12.12L18.3 15.9C20.76 16.2 22.62 17.86 22.62 20.46C22.62 23.38 20.42 25.24 17.48 25.24C14.64 25.24 12.6 23.5 12.6 20.5H14.54C14.54 22.38 15.7 23.48 17.52 23.48C19.4 23.48 20.62 22.28 20.62 20.42C20.62 18.68 19.42 17.52 17.12 17.52Z"
                     fill="white"
@@ -156,7 +159,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="col-span-5 md2:col-span-4 text-3xl font-medium pl-4">
-                Dull clinic improvements and staff experience
+                Stagnant clinic growth and staff experience
               </h3>
             </div>
           </div>
@@ -172,13 +175,12 @@ export default function Home() {
         </p>
         <p className="text-2xl">😡</p>
         <p className="text-white font-bold text-lg mx-8 italic">
-          &quot;I typically see 15 patients a day, easily an 8-10 hour
-          days&quot;
+          &quot;I typically see 15 patients a day, easily 8-10 hour days.&quot;
         </p>
         <p className="text-2xl">🥱</p>
         <p className="text-white font-bold text-lg mx-8 italic">
           &quot;We have high turnover at the clinic and it&apos;s hard to keep
-          up with it&quot;
+          staff trained.&quot;
         </p>
         <p className="text-2xl">🥹</p>
         <p className="text-white font-bold text-lg mx-8 italic">
@@ -188,7 +190,7 @@ export default function Home() {
         <p className="text-2xl">😡</p>
         <p className="text-white font-bold text-lg mx-8 italic">
           &quot;I&apos;d much rather just see patients, paperwork isn&apos;t why
-          I became a veterinarian&quot;
+          I became a veterinarian.&quot;
         </p>
         <p className="text-2xl">🥱</p>
       </Marquee>
@@ -196,8 +198,8 @@ export default function Home() {
         <div className="pt-28 md:pt-44 pb-12">
           <div className="grid grid-cols-2 gap-4 md:gap-8 pb-12">
             <div className="col-span-2 md:col-span-1 w-full min-[700px]:w-3/4 md:w-full">
-              <h2 className="text-brand-forrest text-5xl xs:text-[55px] min-[530px]:text-[65px] font-bold tracking-tighter leading-[3.6rem] xs:leading-[4.1rem] min-[530px]:leading-[4.4rem]">
-                Then, you need Kreative DocuVet.
+              <h2 className="text-brand-forrest text-5xl xs:text-[55px] min-[530px]:text-[65px] font-bold tracking-tighter leading-[3.8rem] xs:leading-[4.1rem] min-[530px]:leading-[4.4rem]">
+                ...then you need Kreative DocuVet.
               </h2>
             </div>
             <div className="col-span-2 md:col-span-1 flex items-end">
@@ -273,8 +275,8 @@ export default function Home() {
               </h3>
               <p className="text-xl mb-6">
                 Our AI sifts through the audio to pull out key context from your
-                appointment. In minutes, you&apos;ll have a completed medical
-                record ready to review in minutes!
+                appointment. You&apos;ll have a completed medical record ready
+                to review in minutes!
               </p>
               <div className="flex justify-start items-center">
                 <motion.div
@@ -356,8 +358,8 @@ export default function Home() {
               Designed to work the way you do
             </h2>
             <p className="text-neutrals-8 text-xl w-[75%] mx-auto">
-              You won&apos;t have to change a thing about you and your clinic
-              works right now.
+              You won&apos;t have to change a thing about how you and your
+              clinic works right now.
             </p>
           </div>
           <div className="hidden sm2:grid grid-cols-3 gap-8">
@@ -397,8 +399,8 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Out of the way.
                   </span>{" "}
-                  DocuVet listens in the background with no fuss - you&apos;ll
-                  forget it&apos;s there.
+                  DocuVet listens in the background with no fuss - you
+                  won&apos;t even know it&apos;s there.
                 </p>
                 <div className="flex justify-start items-center">
                   <motion.div
@@ -438,7 +440,7 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Forget nothing.
                   </span>{" "}
-                  Every recording, transcript, and medical record in the cloud
+                  Every appointment, transcript, and medical record in the cloud
                   for you, forever.
                 </p>
               </div>
@@ -493,8 +495,8 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Out of the way.
                   </span>{" "}
-                  DocuVet listens in the background with no fuss - you&apos;ll
-                  forget it&apos;s there.
+                  DocuVet listens in the background with no fuss - you
+                  won&apos;t even know it&apos;s there.
                 </p>
               </div>
               <div className="col-span-1 flex flex-col items-center space-y-6">
@@ -503,7 +505,7 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Forget nothing.
                   </span>{" "}
-                  Every recording, transcript, and medical record in the cloud
+                  Every appointment, transcript, and medical record in the cloud
                   for you, forever.
                 </p>
               </div>
@@ -577,8 +579,8 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Out of the way.
                   </span>{" "}
-                  DocuVet listens in the background with no fuss - you&apos;ll
-                  forget it&apos;s there.
+                  DocuVet listens in the background with no fuss - you
+                  won&apos;t even know it&apos;s there.
                 </p>
               </div>
               <div className="col-span-2 flex flex-col items-center justify-end space-y-6 w-1/2 mx-auto mt-8">
@@ -587,7 +589,7 @@ export default function Home() {
                   <span className="font-bold text-brand-deepocean">
                     Forget nothing.
                   </span>{" "}
-                  Every recording, transcript, and medical record in the cloud
+                  Every appointment, transcript, and medical record in the cloud
                   for you, forever.
                 </p>
               </div>
@@ -614,9 +616,14 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Marquee className="bg-neutrals-13 py-2" autoFill speed={75} direction="right">
+      <Marquee
+        className="bg-neutrals-13 py-2"
+        autoFill
+        speed={75}
+        direction="right"
+      >
         <p className="text-white font-bold text-xl mx-8 italic">
-          &quot;It&apos;s like magic!&quot;
+          &quot;It&apos;s like magic&quot;
         </p>
         <p className="text-2xl">☺️</p>
         <p className="text-white font-bold text-xl mx-8 italic">
@@ -629,7 +636,7 @@ export default function Home() {
         </p>
         <p className="text-2xl">🥳</p>
         <p className="text-white font-bold text-xl mx-8 italic">
-          &quot;I wish we had this the last 10 years!&quot;
+          &quot;I wish we had found this years ago!&quot;
         </p>
         <p className="text-2xl">☺️</p>
         <p className="text-white font-bold text-xl mx-8 italic">
@@ -638,8 +645,19 @@ export default function Home() {
         </p>
         <p className="text-2xl">😻</p>
         <p className="text-white font-bold text-xl mx-8 italic">
-          &quot;Lunch breaks don&apos;t feel guilty anymore, I have the time
-          now!&quot;
+          &quot;I&apos:m finnaly getting to take a full lunch break!&quot;
+        </p>
+        <p className="text-2xl">🥳</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;Records have become easy for my staff&quot;
+        </p>
+        <p className="text-2xl">☺️</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;DocuVet&apos;s records are fast and accurate!&quot;
+        </p>
+        <p className="text-2xl">😻</p>
+        <p className="text-white font-bold text-xl mx-8 italic">
+          &quot;I don&apos;t have the guilt of unfinished records anymore!&quot;
         </p>
         <p className="text-2xl">🥳</p>
       </Marquee>
@@ -656,7 +674,7 @@ export default function Home() {
                 Efficiency is possible
               </h2>
               <p className="text-xl text-neutrals-4 mb-6 md:mb-12 pr-0 sm:pr-32 md:pr-8">
-                How you&apos;ve been doing medical records is not the only way.
+                The status quo of doing medical records is not the only way.
                 Kreative DocuVet is the better path forward.
               </p>
               <div className="flex justify-start items-center">
@@ -761,7 +779,8 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-5xl lg:text-[60px] font-bold tracking-tighter text-center leading-[3.8rem] lg:leading-[4.2rem] mb-8">
-              Feel the difference with a 14 day free trial, no credit card required.
+              Feel the difference with a 14 day free trial, no credit card
+              required.
             </h2>
             <div className="flex justify-start items-center">
               <motion.div

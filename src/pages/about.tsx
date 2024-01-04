@@ -102,9 +102,8 @@ export default function About() {
               Our Accomplishments
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl w-full md:w-[85%] font-medium tracking-tight mb-12">
-            We&apos;re proud of what we&apos;ve achieved since starting just two
-            months ago
+          <h2 className="text-4xl md:text-5xl w-full md:w-[85%] font-medium tracking-tight leading-[3.3rem] mb-12">
+            We&apos;re proud of what we&apos;ve achieved, and excited for the future.
           </h2>
           <div className="grid grid-cols-2 gap-8">
             <div className="col-span-2 md:col-span-1 space-y-8">

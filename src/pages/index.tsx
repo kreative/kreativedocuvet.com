@@ -51,7 +51,7 @@ export default function Home() {
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                 >
-                  Book your demo
+                  Book my demo
                   <ArrowRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -333,7 +333,7 @@ export default function Home() {
                     href="/book-demo"
                     className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                   >
-                    Book your demo
+                    Book my demo
                     <ArrowRight size={20} className="ml-2" />
                   </Link>
                 </motion.div>
@@ -416,7 +416,7 @@ export default function Home() {
                       target="_blank"
                       rel="_noopener"
                     >
-                      Book a demo
+                      Book my demo
                       <ArrowUpRight size={20} className="ml-2" />
                     </Link>
                   </motion.div>
@@ -524,7 +524,7 @@ export default function Home() {
                   target="_blank"
                   rel="_noopener"
                 >
-                  Book a demo
+                  Book my demo
                   <ArrowUpRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -608,7 +608,7 @@ export default function Home() {
                   target="_blank"
                   rel="_noopener"
                 >
-                  Book a demo
+                  Book my demo
                   <ArrowUpRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -674,8 +674,8 @@ export default function Home() {
                 Efficiency is possible
               </h2>
               <p className="text-xl text-neutrals-4 mb-6 md:mb-12 pr-0 sm:pr-32 md:pr-8">
-                The status quo of doing medical records is not the only way.
-                Kreative DocuVet is the better path forward.
+                The status quo of doing medical records is no longer your only way.
+                Kreative DocuVet is your better path forward.
               </p>
               <div className="flex justify-start items-center">
                 <motion.div
@@ -691,7 +691,7 @@ export default function Home() {
                     target="_blank"
                     rel="_noopener"
                   >
-                    Book a demo
+                    Book my demo
                     <ArrowUpRight size={20} className="ml-2" />
                   </Link>
                 </motion.div>
@@ -794,7 +794,7 @@ export default function Home() {
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                 >
-                  Book your demo
+                  Book my demo
                   <ArrowRight size={20} className="ml-2" />
                 </Link>
               </motion.div>

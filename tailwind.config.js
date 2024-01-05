@@ -24,7 +24,7 @@ const config = {
         "about-page-mockup":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704230419/kreativedocuvet.com/ezgif.com-png-to-webp-converter_rd41d1.webp')",
         "female-vet":
-          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704217348/kreativedocuvet.com/Vet_portrait_wmkn1y.webp')",
+          "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1704436094/kreativedocuvet.com/JPG_to_WEBP_conversion_result_dbhfas.webp')",
         "hero-gradient":
           "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp')",
         "cta-gradient":

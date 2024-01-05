@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck, Timer, Notepad, Stethoscope, Target } from "@phosphor-icons/react";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
@@ -700,7 +700,7 @@ export default function Home() {
             <div className="col-span-2 md:col-span-1 pt-8 md:pt-0">
               <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 gap-y-12 gap-x-8">
                 <div className="col-span-1">
-                  <Butterfly
+                  <Timer
                     size={72}
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
@@ -713,7 +713,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="col-span-1">
-                  <Butterfly
+                  <Notepad
                     size={72}
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
@@ -725,7 +725,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="col-span-1">
-                  <Butterfly
+                  <Stethoscope
                     size={72}
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
@@ -738,7 +738,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="col-span-1">
-                  <Butterfly
+                  <Target
                     size={72}
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />

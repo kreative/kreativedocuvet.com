@@ -55,7 +55,7 @@ export default function PopupMenu() {
               <MenuItem link={"/faqs"} name={"Faqs"} />
               <MenuItem link={"/about"} name={"About"} />
               <MenuItem link={"/contact"} name={"Contact"} />
-              <MenuItem link={"/sign-in"} name={"Sign in"} />
+              {/* <MenuItem link={"/sign-in"} name={"Sign in"} /> */}
             </div>
           </Dialog.Panel>
         </div>

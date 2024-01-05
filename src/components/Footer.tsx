@@ -236,7 +236,7 @@ export default function Footer() {
               <div className="col-span-2 md:col-span-1 flex justify-center md:justify-start items-center space-x-3">
                 <p className="text-md">
                   © 2023 Kreative DocuVet, inc. All rights reserved.{" "}
-                  <Link href="/sitemap" className="text-md underline">
+                  <Link href="/sitemap.xml" className="text-md underline">
                     Sitemap
                   </Link>
                 </p>

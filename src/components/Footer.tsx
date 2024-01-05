@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 function FooterLinkGroupLabel({ title }: { title: string }) {
   return (
-    <h4 className="text-neutrals-7 text-sm mb-2 uppercase italic">{title}</h4>
+    <p className="text-black font-medium text-sm mb-2 uppercase italic underline">{title}</p>
   );
 }
 

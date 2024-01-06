@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck, Timer, Notepad, Stethoscope, Target } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck, Timer, Notepad, HandCoins, Target } from "@phosphor-icons/react";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
@@ -674,8 +674,8 @@ export default function Home() {
                 Efficiency is possible
               </h2>
               <p className="text-xl text-neutrals-4 mb-6 md:mb-12 pr-0 sm:pr-32 md:pr-8">
-                The status quo of doing medical records is no longer your only way.
-                Kreative DocuVet is your better path forward.
+                The status quo of doing medical records is no longer your only
+                way. Kreative DocuVet is your better path forward.
               </p>
               <div className="flex justify-start items-center">
                 <motion.div
@@ -708,8 +708,8 @@ export default function Home() {
                     Save time
                   </h3>
                   <p className="text-neutrals-4">
-                    Don&apos;t spend hours writing medical records anymore.
-                    DocuVet&apos;s got this.
+                    Don&apos;t waste time writing medical records anymore. DocuVet&apos;s got
+                    this.
                   </p>
                 </div>
                 <div className="col-span-1">
@@ -725,12 +725,12 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="col-span-1">
-                  <Stethoscope
+                  <HandCoins
                     size={72}
                     className="text-white p-4 bg-white bg-opacity-15 rounded-xl mb-4"
                   />
                   <h3 className="text-2xl font-bold tracking-tight text-white mb-2">
-                    Unlock patients
+                    Unlock revenue
                   </h3>
                   <p className="text-neutrals-4">
                     Less time on records = more time with patients, and more

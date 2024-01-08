@@ -229,10 +229,10 @@ export default function Home() {
               </div>
               <div className="flex justify-end sm:justify-center">
                 <Image
-                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703704549/kreativedocuvet.com/Step_1_No_Fade_owo2ih.webp"
+                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704663210/kreativedocuvet.com/step-1-mockup.webp"
                   alt="Kreative DocuVet mobile app mockup of single appointment selection screen."
-                  width={1056}
-                  height={1323}
+                  width={704}
+                  height={882}
                   className="w-5/6 xs:w-3/4 sm:w-full lg:w-[75%]"
                 />
               </div>
@@ -299,9 +299,9 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703705192/kreativedocuvet.com/Step_3_bhaijx.webp"
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704664145/kreativedocuvet.com/PNG_to_WEBP_conversion_1_gonslx.webp"
               alt="Kreative DocuVet mobile and website mockup of the completed medical record screens."
-              width={1896}
+              width={2010}
               height={2079}
               className="w-full sm:w-[60%]"
             />
@@ -387,7 +387,7 @@ export default function Home() {
             </div>
             <div className="col-span-1">
               <Image
-                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704664350/kreativedocuvet.com/PNG_to_WEBP_conversion_2_nnajh1.webp"
                 alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                 width={470}
                 height={1252}
@@ -460,7 +460,7 @@ export default function Home() {
               </div>
               <div className="col-span-1">
                 <Image
-                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704664350/kreativedocuvet.com/PNG_to_WEBP_conversion_2_nnajh1.webp"
                   alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                   width={470}
                   height={1252}
@@ -532,7 +532,7 @@ export default function Home() {
           </div>
           <div className="block sm:hidden">
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
+              <div className="col-span-1 flex flex-col items-center justify-start space-y-6">
                 <Devices size={84} className="text-brand-forrest" />
                 <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
                   <span className="font-bold text-brand-deepocean">
@@ -542,7 +542,7 @@ export default function Home() {
                   we&apos;re cross platform.
                 </p>
               </div>
-              <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
+              <div className="col-span-1 flex flex-col items-center justify-start space-y-6">
                 <Handshake size={84} className="text-brand-forrest" />
                 <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
                   <span className="font-bold text-brand-deepocean">
@@ -555,7 +555,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704233531/kreativedocuvet.com/PNG_to_WebP_converter_3_tbr07d.webp"
+                src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704664350/kreativedocuvet.com/PNG_to_WEBP_conversion_2_nnajh1.webp"
                 alt="Kreative DocuVet on iPhone 15 Pro Max, mockup of the single appointment page."
                 width={470}
                 height={1252}
@@ -563,7 +563,7 @@ export default function Home() {
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
+              <div className="col-span-1 flex flex-col items-center justify-start space-y-6">
                 <Heart size={84} className="text-brand-forrest" />
                 <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
                   <span className="font-bold text-brand-deepocean">
@@ -573,7 +573,7 @@ export default function Home() {
                   veterinary software.
                 </p>
               </div>
-              <div className="col-span-1 flex flex-col items-center justify-end space-y-6">
+              <div className="col-span-1 flex flex-col items-center justify-start space-y-6">
                 <FilmReel size={84} className="text-brand-forrest" />
                 <p className="text-xl leading-7 text-neutrals-8 text-center w-[90%]">
                   <span className="font-bold text-brand-deepocean">
@@ -708,8 +708,8 @@ export default function Home() {
                     Save time
                   </h3>
                   <p className="text-neutrals-4">
-                    Don&apos;t waste time writing medical records anymore. DocuVet&apos;s got
-                    this.
+                    Don&apos;t waste time writing medical records anymore.
+                    DocuVet&apos;s got this.
                   </p>
                 </div>
                 <div className="col-span-1">
@@ -754,10 +754,10 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704229466/kreativedocuvet.com/PNG_to_WebP_converter_mjnyhk.webp"
+            src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704665245/kreativedocuvet.com/Patients_Mockup_vqpuha.webp"
             alt="Kreative DocuVet web application mockup of the patients list screen."
-            width={3375}
-            height={1257}
+            width={4320}
+            height={2386}
             className="hidden md:block w-full h-auto"
           />
           <Image

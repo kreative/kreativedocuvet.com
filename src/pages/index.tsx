@@ -26,11 +26,11 @@ export default function Home() {
               done for you.
             </h1>
             <Image
-              className="w-full sm:w-[80%] mt-16 mb-12 md:mb-24"
-              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704243167/kreativedocuvet.com/Hero_Mockup_i5af9c.webp"
+              className="w-full sm:w-[65%] mt-16 mb-12 md:mb-24"
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704737033/kreativedocuvet.com/Mockup_hehe_2_hgkrha.webp"
               alt="Kreative DocuVet completed medical record mobile app mockup."
-              width={500}
-              height={1200}
+              width={2910}
+              height={4200}
             />
             <p className="text-xl font-medium w-[75%] lg:w-[50%] text-center mb-8">
               <span className="font-bold">
@@ -645,7 +645,7 @@ export default function Home() {
         </p>
         <p className="text-2xl">😻</p>
         <p className="text-white font-bold text-xl mx-8 italic">
-          &quot;I&apos:m finnaly getting to take a full lunch break!&quot;
+          &quot;I&apos:m finally getting to take a full lunch break!&quot;
         </p>
         <p className="text-2xl">🥳</p>
         <p className="text-white font-bold text-xl mx-8 italic">

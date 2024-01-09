@@ -39,11 +39,19 @@ export default function Home() {
               done for you.
             </h1>
             <Image
-              className="w-full sm:w-[65%] mt-16 mb-12 md:mb-24"
+              className="w-full sm:w-[65%] mt-16 mb-12 md:mb-24 hidden md:block"
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704737033/kreativedocuvet.com/Mockup_hehe_2_hgkrha.webp"
               alt="Kreative DocuVet completed medical record mobile app mockup."
               width={2910}
               height={4200}
+              priority={true}
+            />
+            <Image
+              className="w-full xs:w-[75%] sm:w-[65%] mt-16 mb:12 mb:24 block md:hidden"
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704781575/kreativedocuvet.com/PNG_to_WEBP_conversion_mockup_1_picxfj.webp"
+              alt="Kreative DocuVet complted medicla record mobile app mockup"
+              width={437}
+              height={630}
               priority={true}
             />
             <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8">

@@ -256,7 +256,7 @@ export default function Home() {
                 Our custom built software is tailored specifically for small and
                 large animal veterinarians to reduce the time spent on medical
                 records. With our animal-specific AI, we can help vets cut down
-                time writing medical records by 92%.
+                time writing medical records by 70%!
               </p>
             </div>
           </div>

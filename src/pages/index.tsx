@@ -4,7 +4,20 @@ import Container from "@/components/Container";
 import SplashContainer from "@/components/SplashContainer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ArrowRight, ArrowUpRight, Butterfly, Devices, Heart, FilmReel, Handshake, CloudCheck, Timer, Notepad, HandCoins, Target } from "@phosphor-icons/react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Butterfly,
+  Devices,
+  Heart,
+  FilmReel,
+  Handshake,
+  CloudCheck,
+  Timer,
+  Notepad,
+  HandCoins,
+  Target,
+} from "@phosphor-icons/react";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
@@ -31,6 +44,7 @@ export default function Home() {
               alt="Kreative DocuVet completed medical record mobile app mockup."
               width={2910}
               height={4200}
+              priority={true}
             />
             <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8">
               <span className="font-bold">
@@ -227,24 +241,24 @@ export default function Home() {
                   appointments are synced across devices and staff.
                 </p>
               </div>
-              <div className="flex justify-end sm:justify-center">
+              <div className="flex justify-end sm:justify-center w-full">
                 <Image
                   src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704663210/kreativedocuvet.com/step-1-mockup.webp"
                   alt="Kreative DocuVet mobile app mockup of single appointment selection screen."
                   width={704}
                   height={882}
-                  className="w-5/6 xs:w-3/4 sm:w-full lg:w-[75%]"
+                  className="w-5/6 sm:w-full lg:w-[85%]"
                 />
               </div>
             </div>
             <div className="col-span-2 sm:col-span-1 rounded-[20px] bg-neutrals-2 border border-neutrals-5 pt-0 px-8 pb-8 md:px-12 md:pb-12 flex flex-col items-start justify-between space-y-8">
-              <div className="flex justify-center">
+              <div className="flex justify-center w-full">
                 <Image
-                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703704727/kreativedocuvet.com/Step_2_vks9ug.webp"
+                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704778506/kreativedocuvet.com/Mockup_step_2_cfm61x.png"
                   alt="Kreative DocuVet mobile app mockup of appointment recording screen."
-                  width={1056}
-                  height={1392}
-                  className="w-full lg:w-[75%]"
+                  width={708}
+                  height={928}
+                  className="w-full lg:w-[85%]"
                 />
               </div>
               <div>

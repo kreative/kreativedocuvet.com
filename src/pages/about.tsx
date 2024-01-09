@@ -81,16 +81,27 @@ export default function About() {
       </Container>
       <Container>
         <div className="grid grid-cols-12 gap-4 pb-24">
-          <div className="col-span-12 md2:col-span-4 order-2 md2:order-1 rounded-[20px] bg-about-page-mockup bg-cover bg-center min-h-[500px] sm:min-h-[700px] md2:min-h-0" />
+          <div className="col-span-12 md2:col-span-4 order-2 md2:order-1 min-h-[500px] sm:min-h-[700px] md2:min-h-0 relative">
+            <Image
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704230419/kreativedocuvet.com/ezgif.com-png-to-webp-converter_rd41d1.webp"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              sizes="100vw"
+              className="rounded-[20px]"
+            />
+          </div>
           <div className="col-span-12 md2:col-span-8 order-1 md2:order-2 rounded-[20px] bg-brand-deepocean py-12 px-8">
             <span className="text-white px-4 py-[6px] rounded-full border border-white">
               Our mission
             </span>
             <h2 className="text-white text-5xl font-medium mt-4 tracking-tight pb-16 pt-4">
-              Advance veterinary practice with tools that veterinarians will actually love to use
+              Advance veterinary practice with tools that veterinarians will
+              actually love to use
             </h2>
             <p className="text-white text-xl">
-              To help them get home on time, grow their practice, maxmimize patient outcomes, and go back to doing their life&apos;s work.
+              To help them get home on time, grow their practice, maxmimize
+              patient outcomes, and go back to doing their life&apos;s work.
             </p>
           </div>
         </div>
@@ -103,7 +114,8 @@ export default function About() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl w-full md:w-[85%] font-medium tracking-tight leading-[3.3rem] mb-12">
-            We&apos;re proud of what we&apos;ve achieved, and excited for the future.
+            We&apos;re proud of what we&apos;ve achieved, and excited for the
+            future.
           </h2>
           <div className="grid grid-cols-2 gap-8">
             <div className="col-span-2 md:col-span-1 space-y-8">

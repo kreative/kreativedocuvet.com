@@ -31,8 +31,16 @@ export default function Home() {
       />
       <Navbar />
       <SplashContainer>
-        <div className="bg-hero-gradient pt-32 pb-44 bg-cover bg-bottom">
-          <div className="w-full lg:w-[75%] min-[1370px]:w-[65%] mx-auto flex flex-col items-center">
+        <div className="pt-32 pb-44 relative">
+          <Image
+            src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            sizes="100vw"
+            className="-z-10"
+          />
+          <div className="w-full lg:w-[75%] min-[1370px]:w-[65%] mx-auto flex flex-col items-center z-10">
             <h1 className="text-white text-5xl xs:text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-bold text-center tracking-tighter">
               Medical records,
               <br />
@@ -102,8 +110,17 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 xs:col-span-1 min-h-[250px] bg-surgeon bg-cover bg-center rounded-[20px]" />
-              <div className="col-span-2 xs:col-span-1 rounded-[20px] bg-brand-deepocean py-12 px-8">
+              <div className="col-span-1 min-h-[150px] xs:min-h-[250px] relative">
+                <Image
+                  src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704782702/kreativedocuvet.com/Surgery_Photo_2_hepxyy.webp"
+                  alt=""
+                  layout="fill"
+                  objectFit="cover"
+                  sizes="100vw"
+                  className="rounded-[20px]"
+                />
+              </div>
+              <div className="col-span-1 rounded-[20px] bg-brand-deepocean py-8 xs:py-12 px-8">
                 <h2 className="text-white text-7xl sm:text-9xl md:text-8xl lg:text-9xl font-bold tracking-tighter pb-4 text-center">
                   7.5
                 </h2>
@@ -113,7 +130,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-span-2 md:col-span-1 bg-female-vet bg-cover bg-center rounded-[20px] min-h-[400px] sm:min-h-[500px]" />
+          <div className="col-span-2 md:col-span-1 min-h-[400px] sm:min-h-[500px] relative">
+            <Image
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704436094/kreativedocuvet.com/JPG_to_WEBP_conversion_result_dbhfas.webp"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              sizes="100vw"
+              className="rounded-[20px]"
+            />
+          </div>
         </div>
       </Container>
       <div className="pt-24 pb-32 sm:pb-48 bg-gradient-to-b from-white to-neutrals-2">
@@ -792,9 +818,25 @@ export default function Home() {
           />
         </Container>
       </div>
-      <div className="bg-cta-gradient py-44 bg-left sm:bg-center bg-cover">
+      <div className="py-44 relative">
+        <Image
+          src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703710705/kreativedocuvet.com/Gradient_background_gbseps.webp"
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          sizes="100vw"
+          className="-z-10 hidden md:block"
+        />
+        <Image
+          src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704783608/kreativedocuvet.com/Mobile_Gradient_2_njbnhy.webp"
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          sizes="100vw"
+          className="-z-10 block md:hidden"
+        />
         <Container>
-          <div className="w-full sm:w-[75%] md2:w-[65%] mx-auto flex flex-col items-center">
+          <div className="w-full sm:w-[75%] md2:w-[65%] mx-auto flex flex-col items-center z-10">
             <div className="pb-8">
               <span className="text-brand-forrest px-4 py-[6px] rounded-full border border-brand-forrest">
                 Get started for free 👋

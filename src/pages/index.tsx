@@ -32,7 +32,7 @@ export default function Home() {
               width={2910}
               height={4200}
             />
-            <p className="text-xl font-medium w-[75%] lg:w-[50%] text-center mb-8">
+            <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8">
               <span className="font-bold">
                 Go from 20 minutes per record to 2.
               </span>{" "}
@@ -292,7 +292,7 @@ export default function Home() {
                     target="_blank"
                     rel="_noopener"
                   >
-                    Learn more
+                    Book your demo
                     <ArrowUpRight size={20} className="ml-2" />
                   </Link>
                 </motion.div>

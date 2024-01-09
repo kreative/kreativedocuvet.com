@@ -31,8 +31,8 @@ export default function Home() {
       />
       <Navbar />
       <SplashContainer>
-        <div className="pt-32 pb-44 relative">
-          <Image
+        <div className="pt-32 pb-44 bg-hero bg-cover bg-center">
+          {/* <Image
             src="https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp"
             alt=""
             layout="fill"
@@ -40,7 +40,7 @@ export default function Home() {
             sizes="100vw"
             className="-z-10"
             priority={true}
-          />
+          /> */}
           <div className="w-full lg:w-[75%] min-[1370px]:w-[65%] mx-auto flex flex-col items-center z-10">
             <h1 className="text-white text-5xl xs:text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-bold text-center tracking-tighter">
               Medical records,

@@ -20,6 +20,9 @@ const config = {
       fontFamily: {
         sans: ["var(--font-satoshi)"],
       },
+      backgroundImage: {
+        "hero": "url('https://res.cloudinary.com/dlazo25rt/image/upload/v1703699893/kreativedocuvet.com/Hero_Gradient_xoyiqz.webp')",
+      },
       colors: {
         "brand-forrest": "#076448",
         "brand-deepocean": "#086268",

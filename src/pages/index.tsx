@@ -39,6 +39,7 @@ export default function Home() {
             objectFit="cover"
             sizes="100vw"
             className="-z-10"
+            priority={true}
           />
           <div className="w-full lg:w-[75%] min-[1370px]:w-[65%] mx-auto flex flex-col items-center z-10">
             <h1 className="text-white text-5xl xs:text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-bold text-center tracking-tighter">

@@ -83,7 +83,7 @@ export default function About() {
         <div className="grid grid-cols-12 gap-4 pb-24">
           <div className="col-span-12 md2:col-span-4 order-2 md2:order-1 min-h-[500px] sm:min-h-[700px] md2:min-h-0 relative">
             <Image
-              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704230419/kreativedocuvet.com/ezgif.com-png-to-webp-converter_rd41d1.webp"
+              src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704901429/kreativedocuvet.com/Khaki_shirt_iPhone_mockup_koj5sg.webp"
               alt=""
               layout="fill"
               objectFit="cover"

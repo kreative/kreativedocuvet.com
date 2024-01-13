@@ -103,7 +103,7 @@ export default function Home() {
               </h2>
               <p className="text-white text-xl">
                 Our cross-platform software is helping small and large animal
-                veterinarians stress less, save time, stress less, take those
+                veterinarians save time, stress less, take those
                 lunch breaks,{" "}
                 <span className="italic underline">
                   all while caring for more patients.

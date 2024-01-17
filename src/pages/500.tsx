@@ -20,7 +20,7 @@ export default function Custom500() {
             Internal Server Error
           </h1>
           <p className="mt-6 text-base leading-7 text-neutrals-8">
-            Sorry, we couldn&apos;t find the page you&apos;re looking for.
+            Sorry, something went wrong with our systems. We are working on fixing it as you read this!
           </p>
           <div className="mt-6 flex items-baseline justify-center gap-x-4">
             <div className="flex justify-start items-center">

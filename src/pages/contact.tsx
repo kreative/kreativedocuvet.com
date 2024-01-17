@@ -53,7 +53,7 @@ export default function Contact() {
                   of our team members on our calendar.
                 </p>
                 <a
-                  href="https://calendly.com/kreativedocuvet/kreative-docuvet-demo-clone"
+                  href="https://calendly.com/kreativedocuvet/free-demo"
                   className="underline text-lg hover:text-brand-seafoam"
                   target="_blank"
                   rel="_noopener"

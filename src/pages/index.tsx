@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import {
   ArrowRight,
   ArrowUpRight,
-  Butterfly,
   Devices,
   Heart,
   FilmReel,
@@ -82,7 +81,7 @@ export default function Home() {
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                 >
-                  Book my demo
+                  Book my demo (2 min)
                   <ArrowRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -103,8 +102,7 @@ export default function Home() {
               </h2>
               <p className="text-white text-xl">
                 Our cross-platform software is helping small and large animal
-                veterinarians save time, stress less, take those
-                lunch breaks,{" "}
+                veterinarians save time, stress less, take those lunch breaks,{" "}
                 <span className="italic underline">
                   all while caring for more patients.
                 </span>
@@ -382,7 +380,7 @@ export default function Home() {
                     href="/book-demo"
                     className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                   >
-                    Book my demo
+                    Book my demo (2 min)
                     <ArrowRight size={20} className="ml-2" />
                   </Link>
                 </motion.div>
@@ -465,7 +463,7 @@ export default function Home() {
                       target="_blank"
                       rel="_noopener"
                     >
-                      Book my demo
+                      Book my demo (2 min)
                       <ArrowUpRight size={20} className="ml-2" />
                     </Link>
                   </motion.div>
@@ -573,7 +571,7 @@ export default function Home() {
                   target="_blank"
                   rel="_noopener"
                 >
-                  Book my demo
+                  Book my demo (2 min)
                   <ArrowUpRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -657,7 +655,7 @@ export default function Home() {
                   target="_blank"
                   rel="_noopener"
                 >
-                  Book my demo
+                  Book my demo (2 min)
                   <ArrowUpRight size={20} className="ml-2" />
                 </Link>
               </motion.div>
@@ -740,7 +738,7 @@ export default function Home() {
                     target="_blank"
                     rel="_noopener"
                   >
-                    Book my demo
+                    Book my demo (2 min)
                     <ArrowUpRight size={20} className="ml-2" />
                   </Link>
                 </motion.div>
@@ -859,7 +857,7 @@ export default function Home() {
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
                 >
-                  Book my demo
+                  Book my demo (2 min)
                   <ArrowRight size={20} className="ml-2" />
                 </Link>
               </motion.div>

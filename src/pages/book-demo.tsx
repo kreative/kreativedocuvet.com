@@ -27,15 +27,15 @@ export default function BookDemo() {
               Discover why veterinarians are making the switch
             </h1>
             <p className="pr-16 text-lg leading-relaxed">
-              We&apos;d love to meet you and show you how DocuVet can help reduce
-              your medical record workload each week! On our call, we&apos;ll discuss
-              product features, how it works, pricing, and any questions you may
-              have.
+              We&apos;d love to meet you and show you how DocuVet can help
+              reduce your medical record workload each week! On our call,
+              we&apos;ll discuss product features, how it works, pricing, and
+              any questions you may have.
             </p>
           </div>
           <div className="col-span-12 lg:col-span-7">
             <InlineWidget
-              url="https://calendly.com/kreativedocuvet/free-demo"
+              url="https://calendly.com/d/43s-svk-pxm/kreative-docuvet-demo"
               styles={{
                 height: "1000px",
               }}

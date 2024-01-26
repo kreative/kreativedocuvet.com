@@ -403,6 +403,19 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
+"@typeform/embed-react@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-3.10.0.tgz#92cc000f70b0fe3ec74d51df05013a170b6eeeda"
+  integrity sha512-2ELxR0KtvKFTEDAMYQUGkck0TLw2ANdhgy1yZNy/lWlwh6wDyLHGaIAOoHhOLBgEDkTbzg24RPP9N+HR9CR1BA==
+  dependencies:
+    "@typeform/embed" "4.4.1"
+    fast-deep-equal "^3.1.3"
+
+"@typeform/embed@4.4.1":
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-4.4.1.tgz#1804006a99ba1a7b5c8a47209e056bdb86e82bb0"
+  integrity sha512-TMt/X17VzGcQp11TaQiJZei8JFRg8TGJs6xwssWsYhqwqkOPHDa7M5XWjSsGiCT+tun72MDgFDZc8KyVGRA3ew==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"

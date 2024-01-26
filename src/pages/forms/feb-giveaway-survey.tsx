@@ -15,11 +15,11 @@ export default function FebGiveawaySurvey() {
       <Container>
         <div className="text-center pt-4 md:pt-8 pb-12">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Enter to win FREE LUNCH for your clinic! 
+            Enter to win FREE LUNCH for your clinic!
           </h1>
           <p className="text-lg md:text-xl text-neutrals-9 pt-3 pb-6">
             We promise it&apos;ll only take{" "}
-            <span className="font-bold">2 minutes</span> and nothing more.
+            <span className="font-bold">60 seconds</span> and nothing more.
           </p>
           <div className="bg-gradient-to-r from-brand-forrest to-brand-deepocean p-1.5 rounded-[12px]">
             <div className="bg-white rounded-[10px]">
@@ -30,6 +30,9 @@ export default function FebGiveawaySurvey() {
               />
             </div>
           </div>
+          <p className="text-md md:text-lg text-neutrals-8 py-6 italic">
+            Please note, we have a limited number of lunches to give away and as a result have a cap of $150 for the total order.
+          </p>
         </div>
       </Container>
       <Footer />

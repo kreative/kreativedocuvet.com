@@ -708,7 +708,7 @@ export default function Home() {
         </p>
         <p className="text-2xl">🥳</p>
       </Marquee>
-      <div className="bg-brand-deepocean pt-32">
+      <div className="bg-brand-deepocean pt-24 sm:pt-32">
         <Container>
           <div className="grid grid-cols-2 gap-12 pb-24">
             <div className="col-span-2 md:col-span-1 flex flex-col">

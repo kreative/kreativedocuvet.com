@@ -5,7 +5,7 @@ import { Dialog } from "@headlessui/react";
 
 function MenuItem({ link, name }: { link: string; name: string }) {
   return (
-    <Link href={link} className="text-2xl py-2 px-1 text-neutrals-13">
+    <Link href={link} className="text-2xl py-2 px-1 text-neutrals-13 focus:ring-0 focus:ring-transparent">
       {name}
     </Link>
   );
@@ -48,7 +48,7 @@ export default function PopupMenu() {
         className="relative z-50"
       >
         <div className="fixed inset-0 flex items-start justify-start p-4 top-[4rem]">
-          <Dialog.Panel className="mx-auto min-w-full rounded-lg bg-white bg-opacity-[.85] backdrop-blur-md border border-neutrals-5">
+          <Dialog.Panel className="mx-auto min-w-full rounded-lg bg-white bg-opacity-[.90] backdrop-blur-md border border-neutrals-5">
             <div className="flex flex-col items-start justify-between space-y-1 p-5">
               <MenuItem link={"/"} name={"Home"} />
               <MenuItem link={"/our-promise"} name={"Our Promise"} />

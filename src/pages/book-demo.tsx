@@ -23,7 +23,7 @@ export default function BookDemo() {
                 Book your free demo
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl leading-6 lg:leading-4 w-full md:w-[80%] font-bold tracking-tighter mb-8">
+            <h1 className="text-5xl md:text-6xl w-full md:w-[80%] font-bold tracking-tighter mb-8">
               Discover why veterinarians are making the switch
             </h1>
             <p className="pr-16 text-lg leading-relaxed">
@@ -33,7 +33,7 @@ export default function BookDemo() {
               any questions you may have.
             </p>
           </div>
-          <div className="col-span-12 lg:col-span-7">
+          <div className="col-span-12 lg:col-span-7 mb-12">
             <InlineWidget
               url="https://calendly.com/d/43s-svk-pxm/kreative-docuvet-demo"
               styles={{
@@ -52,7 +52,7 @@ export default function BookDemo() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl w-full md:w-[60%] font-bold tracking-tighter mb-8 text-center">
-              Read our promise to you and the reasons behind why we’re crafting
+              Read our promise to you and the reasons behind why we&apos;re crafting
               Kreative DocuVet
             </h2>
             <div className="flex justify-start items-center">

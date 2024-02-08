@@ -23,7 +23,7 @@ export default function BookDemo() {
                 Book your free demo
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl w-full md:w-[80%] font-bold tracking-tighter mb-8">
+            <h1 className="text-5xl md:text-6xl leading-6 lg:leading-4 w-full md:w-[80%] font-bold tracking-tighter mb-8">
               Discover why veterinarians are making the switch
             </h1>
             <p className="pr-16 text-lg leading-relaxed">

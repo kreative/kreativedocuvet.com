@@ -1,5 +1,6 @@
-import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
+import "@/styles/globals.css";
+import Script from "next/script";
+import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
@@ -204,6 +205,20 @@ export default function App({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
+
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="ga4" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+        `}
+      </Script>
+
       <Component {...pageProps} />
     </div>
   );

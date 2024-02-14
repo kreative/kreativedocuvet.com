@@ -232,7 +232,7 @@ export default function Footer() {
           </svg>
           <div>
             <hr className="line" />
-            <div className="grid grid-cols-2 gap-4 md:gap-0 mt-6 md:mt-4 mb-1">
+            <div className="grid grid-cols-2 gap-4 md:gap-0 mt-6 md:mt-4 mb-1 text-center">
               <div className="col-span-2 md:col-span-1 flex justify-center md:justify-start items-center space-x-3">
                 <p className="text-md">
                   © 2023 Kreative DocuVet, inc. All rights reserved.{" "}

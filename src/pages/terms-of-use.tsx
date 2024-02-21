@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
+import TermlyScriptWrapper from "@/components/TermlyScriptWrapper";
 
 export default function TermsOfUse() {
   useEffect(() => {
@@ -20,12 +21,7 @@ export default function TermsOfUse() {
       />
       <Navbar />
       <Container>
-        <div
-          className="pb-24"
-          name="termly-embed"
-          data-id="6f8cbd16-e5a6-4b1e-87f5-e99d8aaeff17"
-          data-type="iframe"
-        ></div>
+        <TermlyScriptWrapper dataId="6f8cbd16-e5a6-4b1e-87f5-e99d8aaeff17" />
       </Container>
       <Footer />
     </div>

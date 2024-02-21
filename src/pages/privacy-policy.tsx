@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
+import TermlyScriptWrapper from "@/components/TermlyScriptWrapper";
 
 export default function PrivacyPolicy() {
   useEffect(() => {
@@ -20,12 +21,7 @@ export default function PrivacyPolicy() {
       />
       <Navbar />
       <Container>
-        <div
-          className="pb-24"
-          name="termly-embed"
-          data-id="d3c01e11-086a-46d9-a515-d1fdc64cd60a"
-          data-type="iframe"
-        ></div>
+        <TermlyScriptWrapper dataId="d3c01e11-086a-46d9-a515-d1fdc64cd60a" />
       </Container>
       <Footer />
     </div>

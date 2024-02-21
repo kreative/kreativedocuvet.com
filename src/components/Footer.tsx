@@ -5,7 +5,9 @@ import Marquee from "react-fast-marquee";
 
 function FooterLinkGroupLabel({ title }: { title: string }) {
   return (
-    <p className="text-black font-medium text-sm mb-2 uppercase italic underline">{title}</p>
+    <p className="text-black font-medium text-sm mb-2 uppercase italic underline">
+      {title}
+    </p>
   );
 }
 
@@ -87,7 +89,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-span-12 xs:col-span-6 lg:col-span-2">
-              <div className="mb-6">
+              <div className="mb-4">
                 <FooterLinkGroupLabel title="Socials" />
                 <div className="flex flex-col items-start space-y-3 md:space-y-2">
                   <FooterLink
@@ -106,6 +108,13 @@ export default function Footer() {
                     href="https://www.linkedin.com/company/kreativedocuvet"
                     title="LinkedIn"
                   />
+                </div>
+              </div>
+              <div className="mb-6">
+                <FooterLinkGroupLabel title="Legal" />
+                <div className="flex flex-col items-start space-y-3 md:space-y-2">
+                  <FooterLink href="/privacy-policy" title="Privacy Policy" />
+                  <FooterLink href="/terms-of-use" title="Terms of Use" />
                 </div>
               </div>
             </div>

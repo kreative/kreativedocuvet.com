@@ -5,7 +5,9 @@ function MenuItem({ link, name }: { link: string; name: string }) {
   return (
     <NavigationMenu.Item>
       <NavigationMenu.Link asChild>
-        <Link className="text-neutrals-13 hover:underline" href={link}>
+        <Link className="text-neutrals-13 hover:underline" href={link} target={
+          link.startsWith("http") ? "_blank" : "_self"
+        }>
           {name}
         </Link>
       </NavigationMenu.Link>
@@ -21,6 +23,7 @@ export default function NavMenu() {
         <MenuItem link="/faqs" name="Faqs" />
         <MenuItem link="/about" name="About" />
         <MenuItem link="/contact" name="Contact" />
+        <MenuItem link="https://docuvet.kreativeusa.com" name="Sign in" />
         {/* <MenuItem link="/sign-in" name="Sign in" /> */}
       </NavigationMenu.List>
     </NavigationMenu.Root>

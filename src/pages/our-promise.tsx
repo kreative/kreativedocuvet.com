@@ -70,16 +70,17 @@ export default function Story() {
           />
           <p className="text-xl py-12">
             We believe that veterinarians deserve better tools and a better
-            experience. We&apos;re cofounded by an equine veterinarian who knows
-            first hand the potential of technology to help veterinarians build
-            great clinics and maximize patient outcomes.
+            experience. We&apos;re cofounded by a passionate veterinarians,
+            engineers, and designers who know first hand the potential of
+            technology to help veterinarians build great clinics and maximize
+            patient outcomes.
             <br />
             <br />
-            The only thing that&apos;s left is to build it and that&apos;s why
-            our four person team is working hard to craft Kreative DocuVet to
-            bring joy to everyday veterinarians. To stay true to our mission and
-            to keep veterinarians first, we&apos;ve establish three principles
-            to inform <span className="italic">every decision we make:</span>
+            That&apos;s why our team is working hard to craft Kreative DocuVet
+            to bring joy to everyday veterinarians. To stay true to our mission
+            and to keep veterinarians first, we&apos;ve establish three
+            principles to inform{" "}
+            <span className="italic">every decision we make:</span>
           </p>
           <h3 className="text-2xl font-medium mb-4 tracking-tight">
             Veterinarian-specific

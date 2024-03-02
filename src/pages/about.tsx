@@ -55,9 +55,9 @@ export default function About() {
               We believe that everyone should have access to tools that improve
               lives and alleviate stress, and veterinarians are no different.
               Our story started when we realized that veterinarians were being
-              left behind in the digital age. Two of our cofounders, Rozann
-              (equine veterinarian) and Armaan (software engineer), discussed
-              the lack of innovation in the veterinary space.
+              left behind in the digital age. Our cofounders, Rozann (equine
+              veterinarian) and Armaan (software engineer), discussed the lack
+              of innovation in the veterinary space.
               <br />
               <br />
               Rozann was tired of using outdated software that was clunky, slow,
@@ -68,13 +68,12 @@ export default function About() {
               veterinarians, and left equine and large animal practices behind.
               <br />
               <br />
-              Together with our other cofounders, Charles and Conner (software
-              engineers), we started Kreative DocuVet to build the tools that
-              veterinarians will love to use. Our focus is on intuitive design
-              that complements a veterinarian&apos;s workflow, not hinders it.
-              We&apos;re bringing game changing technologies like Artificial
-              Intelligence to help veterinarians increase efficiency and get
-              home on time.
+              Together, our team started Kreative DocuVet to build the tools
+              that veterinarians will love to use. Our focus is on intuitive
+              design that complements a veterinarian&apos;s workflow, not
+              hinders it. We&apos;re bringing game changing technologies like
+              Artificial Intelligence to help veterinarians increase efficiency
+              and get home on time.
             </p>
           </div>
         </div>
@@ -124,6 +123,7 @@ export default function About() {
             </div>
             <div className="col-span-2 md:col-span-1 space-y-8">
               <Accomplishment description="Kreative DocuVet advanced to round 2 for the Baylor New Venture Competition, being placed in the Top 50 from businesses across the country." />
+              <Accomplishment description="Kreative DocuVet advanced to the final round for the Stu Clark New Venture Competition at the University of Manitoba." />
             </div>
           </div>
           <div className="grid grid-cols-12 px-6 py-4 border-2 border-white bg-white bg-opacity-30 rounded-2xl mt-24 gap-4">

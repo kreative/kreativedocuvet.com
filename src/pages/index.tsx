@@ -120,8 +120,8 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-1 rounded-[20px] bg-brand-deepocean py-8 xs:py-12 px-8">
-                <h2 className="text-white text-7xl sm:text-9xl md:text-8xl lg:text-9xl font-bold tracking-tighter pb-4 text-center">
-                  7.5
+                <h2 className="text-white text-7xl sm:text-9xl md:text-8xl lg:text-9xl font-bold tracking-tighter pb-4 text-center -ml-2">
+                  12.5
                 </h2>
                 <p className="text-white text-xl italic text-center">
                   Hours saved weekly

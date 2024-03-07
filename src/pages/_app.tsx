@@ -4,6 +4,8 @@ import type { AppProps } from "next/app";
 import localFont from "next/font/local";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
+import * as snippet from "@segment/snippet";
+import Layout from "@/components/Layout.jsx";
 
 const satoshi = localFont({
   src: [
@@ -131,6 +133,19 @@ const satoshi = localFont({
   variable: "--font-satoshi",
 });
 
+function renderSnippet() {
+  const opts = {
+    apiKey: process.env.NEXT_PUBLIC_ANALYTICS_WRITE_KEY,
+    page: true,
+  };
+
+  if (process.env.NODE_ENV === "development") {
+    return snippet.max(opts);
+  }
+
+  return snippet.min(opts);
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const canonicalUrl = (
@@ -139,87 +154,92 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className={`${satoshi.variable} font-sans`}>
-      <DefaultSeo
-        title={undefined}
-        titleTemplate="%s | Kreative DocuVet"
-        defaultTitle="Kreative DocuVet"
-        description="Kreative DocuVet is helping veterinarians get home on time with our AI scribe that turns raw appointment audio into completed medical records in minutes."
-        canonical={canonicalUrl}
-        additionalLinkTags={[
-          {
-            rel: "icon",
-            href: "/favicon.ico",
-          },
-          {
-            rel: "apple-touch-icon",
-            href: "/apple-touch-icon.png",
-            sizes: "180x180",
-          },
-          {
-            rel: "icon",
-            href: "/favicon-32x32.png",
-            sizes: "32x32",
-          },
-          {
-            rel: "icon",
-            href: "/favicon-16x16.png",
-            sizes: "16x16",
-          },
-          {
-            rel: "manifest",
-            href: "/site.webmanifest",
-          },
-          {
-            rel: "mask-icon",
-            href: "/safari-pinned-tab.svg",
-            color: "#5bbad5",
-          },
-        ]}
-        additionalMetaTags={[
-          {
-            name: "ms-application-TileColor",
-            content: "#da532c",
-          },
-          {
-            name: "theme-color",
-            content: "#ffffff",
-          },
-        ]}
-        openGraph={{
-          url: "https://kreativedocuvet.com/",
-          title: "Kreative DocuVet",
-          description:
-            "Kreative DocuVet is helping veterinarians get home on time with our AI scribe that turns raw appointment audio into completed medical records in minutes.",
-          images: [
+      <Layout>
+        <DefaultSeo
+          title={undefined}
+          titleTemplate="%s | Kreative DocuVet"
+          defaultTitle="Kreative DocuVet"
+          description="Kreative DocuVet is helping veterinarians get home on time with our AI scribe that turns raw appointment audio into completed medical records in minutes."
+          canonical={canonicalUrl}
+          additionalLinkTags={[
             {
-              url: "/images/docuvet-profile-cover-sqr.png",
-              width: 700,
-              height: 700,
-              alt: "Kreative DocuVet Square Logo Wordmark",
+              rel: "icon",
+              href: "/favicon.ico",
             },
-          ],
-        }}
-        twitter={{
-          handle: "@kreativedocuvet",
-          site: "@kreativedocuvet",
-          cardType: "summary_large_image",
-        }}
-      />
+            {
+              rel: "apple-touch-icon",
+              href: "/apple-touch-icon.png",
+              sizes: "180x180",
+            },
+            {
+              rel: "icon",
+              href: "/favicon-32x32.png",
+              sizes: "32x32",
+            },
+            {
+              rel: "icon",
+              href: "/favicon-16x16.png",
+              sizes: "16x16",
+            },
+            {
+              rel: "manifest",
+              href: "/site.webmanifest",
+            },
+            {
+              rel: "mask-icon",
+              href: "/safari-pinned-tab.svg",
+              color: "#5bbad5",
+            },
+          ]}
+          additionalMetaTags={[
+            {
+              name: "ms-application-TileColor",
+              content: "#da532c",
+            },
+            {
+              name: "theme-color",
+              content: "#ffffff",
+            },
+          ]}
+          openGraph={{
+            url: "https://kreativedocuvet.com/",
+            title: "Kreative DocuVet",
+            description:
+              "Kreative DocuVet is helping veterinarians get home on time with our AI scribe that turns raw appointment audio into completed medical records in minutes.",
+            images: [
+              {
+                url: "/images/docuvet-profile-cover-sqr.png",
+                width: 700,
+                height: 700,
+                alt: "Kreative DocuVet Square Logo Wordmark",
+              },
+            ],
+          }}
+          twitter={{
+            handle: "@kreativedocuvet",
+            site: "@kreativedocuvet",
+            cardType: "summary_large_image",
+          }}
+        />
 
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script id="ga4" strategy="lazyOnload">
-        {`
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <Script id="ga4" strategy="lazyOnload">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
         `}
-      </Script>
-
-      <Component {...pageProps} />
+        </Script>
+        <Script
+          id="segment-script"
+          dangerouslySetInnerHTML={{ __html: renderSnippet() }}
+        />
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }

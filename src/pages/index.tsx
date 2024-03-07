@@ -20,6 +20,7 @@ import {
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import { trackBookDemo } from "../../lib/tracking";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
               done for you.
             </h1>
             <Image
-              className="w-full sm:w-[65%] mt-16 mb-12 md:mb-24 hidden md:block"
+              className="w-full sm:w-[55%] mt-16 mb-12 md:mb-24 hidden md:block"
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704737033/kreativedocuvet.com/Mockup_hehe_2_hgkrha.webp"
               alt="Kreative DocuVet completed medical record mobile app mockup."
               width={2910}
@@ -55,7 +56,7 @@ export default function Home() {
               priority={true}
             />
             <Image
-              className="w-full xs:w-[75%] sm:w-[65%] mt-16 mb:12 mb:24 block md:hidden"
+              className="w-full xs:w-[70%] sm:w-[65%] mt-16 mb:12 mb:24 block md:hidden"
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704781575/kreativedocuvet.com/PNG_to_WEBP_conversion_mockup_1_picxfj.webp"
               alt="Kreative DocuVet complted medicla record mobile app mockup"
               width={437}
@@ -80,6 +81,7 @@ export default function Home() {
                 <Link
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
+                  onClick={() => trackBookDemo("/")}
                 >
                   Book my demo (2 min)
                   <ArrowRight size={20} className="ml-2" />
@@ -338,6 +340,7 @@ export default function Home() {
                     className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
                     target="_blank"
                     rel="_noopener"
+                    onClick={() => trackBookDemo("/")}
                   >
                     Book your demo
                     <ArrowUpRight size={20} className="ml-2" />
@@ -379,6 +382,7 @@ export default function Home() {
                   <Link
                     href="/book-demo"
                     className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
+                    onClick={() => trackBookDemo("/")}
                   >
                     Book my demo (2 min)
                     <ArrowRight size={20} className="ml-2" />
@@ -462,6 +466,7 @@ export default function Home() {
                       className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
                       target="_blank"
                       rel="_noopener"
+                      onClick={() => trackBookDemo("/")}
                     >
                       Book my demo (2 min)
                       <ArrowUpRight size={20} className="ml-2" />
@@ -570,6 +575,7 @@ export default function Home() {
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
                   target="_blank"
                   rel="_noopener"
+                  onClick={() => trackBookDemo("/")}
                 >
                   Book my demo (2 min)
                   <ArrowUpRight size={20} className="ml-2" />
@@ -654,6 +660,7 @@ export default function Home() {
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-neutrals-3"
                   target="_blank"
                   rel="_noopener"
+                  onClick={() => trackBookDemo("/")}
                 >
                   Book my demo (2 min)
                   <ArrowUpRight size={20} className="ml-2" />
@@ -737,6 +744,7 @@ export default function Home() {
                     className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium border border-neutral-5 hover:bg-[#217277] text-neutrals-3"
                     target="_blank"
                     rel="_noopener"
+                    onClick={() => trackBookDemo("/")}
                   >
                     Book my demo (2 min)
                     <ArrowUpRight size={20} className="ml-2" />
@@ -856,6 +864,7 @@ export default function Home() {
                 <Link
                   href="/book-demo"
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
+                  onClick={() => trackBookDemo("/")}
                 >
                   Book my demo (2 min)
                   <ArrowRight size={20} className="ml-2" />

@@ -6,42 +6,45 @@ import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
 import { ArrowRight, Minus, Plus } from "@phosphor-icons/react";
 import { Disclosure } from "@headlessui/react";
+import { trackBookDemo } from "../../lib/tracking";
 
 const faqs = [
   {
     question: "What is Kreative DocuVet?",
     answer:
-      "Kreative DocuVet is an AI powered veterinary scribe that allows small and large animal veterinarians create medical records from raw appointment audio. From the un-edited appointment audio recorded ambiently in the background, our AI can create a complete medical record veterinarians can review in minutes."
+      "Kreative DocuVet is an AI powered veterinary scribe that allows small and large animal veterinarians create medical records from raw appointment audio. From the un-edited appointment audio recorded ambiently in the background, our AI can create a complete medical record veterinarians can review in minutes.",
   },
   {
     question: "How does Kreative DocuVet work?",
     answer:
-      "Our AI understands natural language, veterinary medicine, and animal specific context, so any veterinarian can utilize our platform for their practice. All veterinarians have to do is create an appointment, select a patient, and hit record. When they're done, they hit stop, and our AI pulls out key information and context to produce a medical record they can push to their Patient Management Systems in minutes."
+      "Our AI understands natural language, veterinary medicine, and animal specific context, so any veterinarian can utilize our platform for their practice. All veterinarians have to do is create an appointment, select a patient, and hit record. When they're done, they hit stop, and our AI pulls out key information and context to produce a medical record they can push to their Patient Management Systems in minutes.",
   },
   {
-    question: "Does Kreative DocuVet work for small and large animal veterinarians?",
+    question:
+      "Does Kreative DocuVet work for small and large animal veterinarians?",
     answer:
-      "Yes, our AI understands both small and large animal veterinary medicine. We're currently working on expanding our AI to understand exotic animal medicine as well to ensure Kreative DocuVet is inclusive for all veterinary disciplines."
+      "Yes, our AI understands both small and large animal veterinary medicine. We're currently working on expanding our AI to understand exotic animal medicine as well to ensure Kreative DocuVet is inclusive for all veterinary disciplines.",
   },
   {
     question: "What is ambient recording?",
     answer:
-      "Ambient recording is the process of recording audio in the background of an appointment. Our AI then processes the audio to pull out key information and context to produce a medical record. This allows veterinarians to focus on their patients and clients, rather than taking notes."
+      "Ambient recording is the process of recording audio in the background of an appointment. Our AI then processes the audio to pull out key information and context to produce a medical record. This allows veterinarians to focus on their patients and clients, rather than taking notes.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Getting started is easy. All you have to do is book a demo and we'll walk you through how Kreative DocuVet can work for your practice!"
+      "Getting started is easy. All you have to do is book a demo and we'll walk you through how Kreative DocuVet can work for your practice!",
   },
   {
-    question: "Does Kreative DocuVet integrate with my Patient Management System?",
+    question:
+      "Does Kreative DocuVet integrate with my Patient Management System?",
     answer:
-      "Currently, Kreative DocuVet provides a generated medical record with editing capabilities. We're working on integrating with the most popular Patient Management Systems to allow veterinarians to push their medical records directly to their PM systems."
+      "Currently, Kreative DocuVet provides a generated medical record with editing capabilities. We're working on integrating with the most popular Patient Management Systems to allow veterinarians to push their medical records directly to their PM systems.",
   },
   {
     question: "Why is Kreative DocuVet better than hiring a scribe?",
     answer:
-      "Kreative DocuVet is a fraction of the cost of hiring a scribe. We also provide a more accurate medical record, as our AI is trained to understand veterinary medicine and animal specific context. And, the best part is that you don't have to compromise on your clinic specific template or record format - Kreative DocuVet can be customized to fit your specific clinic's needs."
+      "Kreative DocuVet is a fraction of the cost of hiring a scribe. We also provide a more accurate medical record, as our AI is trained to understand veterinary medicine and animal specific context. And, the best part is that you don't have to compromise on your clinic specific template or record format - Kreative DocuVet can be customized to fit your specific clinic's needs.",
   },
 ];
 
@@ -108,23 +111,15 @@ export default function BookDemo() {
                           </span>
                           <span className="ml-6 flex h-7 items-center">
                             {open ? (
-                              <Minus
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
+                              <Minus className="h-6 w-6" aria-hidden="true" />
                             ) : (
-                              <Plus
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
+                              <Plus className="h-6 w-6" aria-hidden="true" />
                             )}
                           </span>
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-lg pt-4">
-                          {faq.answer}
-                        </p>
+                        <p className="text-lg pt-4">{faq.answer}</p>
                       </Disclosure.Panel>
                     </>
                   )}
@@ -157,6 +152,7 @@ export default function BookDemo() {
                 <Link
                   href={"/book-demo"}
                   className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
+                  onClick={() => trackBookDemo("/faqs")}
                 >
                   Book a free demo
                   <ArrowRight size={20} className="ml-2" />

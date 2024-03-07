@@ -3,6 +3,7 @@ import Container from "./Container";
 import NavMenu from "./NavMenu";
 import PopupMenu from "./PopupMenu";
 import { motion } from "framer-motion";
+import { trackBookDemo } from "../../lib/tracking";
 
 export default function Navbar() {
   return (
@@ -156,6 +157,10 @@ export default function Navbar() {
                 <Link
                   href="/book-demo"
                   className="py-2 px-5 bg-brand-forrest text-white rounded-md drop-shadow-md"
+                  onClick={() => {
+                    const url = new URL(window.location.href);
+                    trackBookDemo(url.pathname, "navbar");
+                  }}
                 >
                   Book your demo
                 </Link>

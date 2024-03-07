@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import { ArrowLineUpRight } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import { trackDiscoverKreative } from "../../lib/tracking";
 
 function Accomplishment({ description }: { description: string }): JSX.Element {
   return (
@@ -188,6 +189,7 @@ export default function About() {
                     className="flex items-center rounded-md py-3.5 px-7 md:py-3.5 md:px-7 text-white font-medium bg-neutrals-13 hover:bg-neutrals-12"
                     target="_blank"
                     rel="_noopener"
+                    onClick={() => trackDiscoverKreative('/about')}
                   >
                     Discover Kreative
                     <ArrowLineUpRight size={20} className="ml-2" />

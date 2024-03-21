@@ -47,6 +47,31 @@ export default function Home() {
               <br />
               done for you.
             </h1>
+            <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8 block sm:hidden pt-8 text-white">
+              <span className="font-bold">
+                Go from 20 minutes per record to 2.
+              </span>{" "}
+              Veterinarians are leveraging our AI to cut down on recordkeeping
+              and go back to doing what they love.
+            </p>
+            <div className="justify-start items-center flex sm:hidden">
+              <motion.div
+                whileHover={{
+                  scale: 0.97,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  href="/book-demo"
+                  className="flex items-center rounded-md py-3.5 px-7 md:py-2.5 md:px-5 font-medium bg-brand-forrest text-white"
+                  onClick={() => trackBookDemo("/")}
+                >
+                  Book my demo (2 min)
+                  <ArrowRight size={20} className="ml-2" />
+                </Link>
+              </motion.div>
+            </div>
             <Image
               className="w-full sm:w-[55%] mt-16 mb-12 md:mb-24 hidden md:block"
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704737033/kreativedocuvet.com/Mockup_hehe_2_hgkrha.webp"
@@ -56,21 +81,21 @@ export default function Home() {
               priority={true}
             />
             <Image
-              className="w-full xs:w-[70%] sm:w-[65%] mt-16 mb:12 mb:24 block md:hidden"
+              className="w-full xs:w-[80%] sm:w-[65%] mt-16 mb:12 mb:24 block md:hidden"
               src="https://res.cloudinary.com/dlazo25rt/image/upload/v1704781575/kreativedocuvet.com/PNG_to_WEBP_conversion_mockup_1_picxfj.webp"
               alt="Kreative DocuVet complted medicla record mobile app mockup"
               width={437}
               height={630}
               priority={true}
             />
-            <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8">
+            <p className="text-xl font-regular w-[75%] lg:w-[50%] text-center mb-8 hidden sm:block">
               <span className="font-bold">
                 Go from 20 minutes per record to 2.
               </span>{" "}
               Veterinarians are leveraging our AI to cut down on recordkeeping
               and go back to doing what they love.
             </p>
-            <div className="flex justify-start items-center">
+            <div className="justify-start items-center hidden sm:flex">
               <motion.div
                 whileHover={{
                   scale: 0.97,

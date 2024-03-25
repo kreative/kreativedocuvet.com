@@ -55,7 +55,14 @@ export default function PopupMenu() {
               <MenuItem link={"/faqs"} name={"Faqs"} />
               <MenuItem link={"/about"} name={"About"} />
               <MenuItem link={"/contact"} name={"Contact"} />
-              {/* <MenuItem link={"/sign-in"} name={"Sign in"} /> */}
+              <MenuItem
+                link="https://docuvet.kreativeusa.com/"
+                name="Sign in"
+              />
+              <MenuItem
+                link="https://id.kreativeusa.com/signup?aidn=289473"
+                name="Register"
+              />
             </div>
           </Dialog.Panel>
         </div>

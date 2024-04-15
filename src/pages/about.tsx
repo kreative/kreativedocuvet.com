@@ -56,14 +56,13 @@ export default function About() {
               We believe that everyone should have access to tools that improve
               lives and alleviate stress, and veterinarians are no different.
               Our story started when we realized that veterinarians were being
-              left behind in the digital age. Our cofounders, Rozann (equine
-              veterinarian) and Armaan (software engineer), discussed the lack
+              left behind in the digital age. Our cofounders, discussed the lack
               of innovation in the veterinary space.
               <br />
               <br />
-              Rozann was tired of using outdated software that was clunky, slow,
-              and difficult to use. She tried multiple different software
-              platforms to get their job done. She was tired of having to use
+              Veterinarians are tired of using outdated software that was clunky, slow,
+              and difficult to use. They&apos;ve tried multiple different software
+              platforms to get their job done. They are was tired of having to use
               software that was built for human doctors, not veterinarians. Or
               if it was for veterinarians, it was tailor made for small animal
               veterinarians, and left equine and large animal practices behind.

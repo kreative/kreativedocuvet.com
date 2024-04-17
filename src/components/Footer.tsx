@@ -67,6 +67,7 @@ export default function Footer() {
         <Container>
           <div className="grid grid-cols-12 gap-y-6 sm:gap-y-12 gap-x-4 lg:gap-4">
             <div className="col-span-12 lg:col-span-5">
+              <h3 className="text-2xl font-medium mb-4 tracking-tight text-brand-forrest">To the busy, tired, and passionate veterinarians. <span className="font-bold">We hear you.</span></h3>
               <p className="text-2xl lg:text-xl mb-4">
                 We&apos;re on a mission to advance veterinary practice by
                 developing tools veterinarians love to use, so they can optimize

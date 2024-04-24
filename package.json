@@ -16,6 +16,7 @@
     "@segment/snippet": "^5.2.1",
     "@tailwindcss/typography": "^0.5.10",
     "@typeform/embed-react": "^3.10.0",
+    "airtable": "^0.12.2",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-seo": "^6.4.0",

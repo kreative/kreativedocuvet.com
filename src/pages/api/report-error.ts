@@ -15,6 +15,7 @@ interface ErrorReportRequest extends NextApiRequest {
     ksn: number;
     email: string;
     referringPage?: string;
+    errorMessage?: string;
   };
 }
 
@@ -29,6 +30,7 @@ export default function handler(req: ErrorReportRequest, res: NextApiResponse) {
     "KSN": req.body.ksn,
     "Email": req.body.email,
     "Referring Page": req.body.referringPage,
+    "Error Message": req.body.errorMessage,
   }, { typecast: true }, function (err, record) {
     if (err) {
       console.log(err);

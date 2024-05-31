@@ -17,6 +17,30 @@ const nextConfig = {
       },
     ],
   },
+  redirects: async () => {
+    return [
+      {
+        source: "/privacy-policy",
+        destination: "/policies/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/terms-of-service",
+        destination: "/policies/terms-of-service",
+        permanent: true,
+      },
+      {
+        source: "/eula",
+        destination: "/policies/eula",
+        permanent: true,
+      },
+      {
+        source: "/cookies",
+        destination: "/policies/cookies",
+        permanent: true,
+      }
+    ];
+  }
 };
 
 module.exports = nextConfig

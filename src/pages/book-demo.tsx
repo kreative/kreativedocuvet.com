@@ -4,10 +4,23 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
-import { InlineWidget } from "react-calendly";
+import { useEffect } from "react";
+import Cal, { getCalApi } from "@calcom/embed-react";
 import { ArrowRight } from "@phosphor-icons/react";
 
 export default function BookDemo() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "kreative-docuvet-demo" });
+      cal("ui", {
+        theme: "light",
+        styles: { branding: { brandColor: "#04e0a2" } },
+        hideEventTypeDetails: true,
+        layout: "month_view",
+      });
+    })();
+  }, []);
+
   return (
     <div>
       <NextSeo
@@ -34,11 +47,11 @@ export default function BookDemo() {
             </p>
           </div>
           <div className="col-span-12 lg:col-span-7 mb-12">
-            <InlineWidget
-              url="https://calendly.com/d/43s-svk-pxm/kreative-docuvet-demo"
-              styles={{
-                height: "1000px",
-              }}
+            <Cal
+              namespace="kreative-docuvet-demo"
+              calLink="kreative/kreative-docuvet-demo"
+              style={{ width: "100%", height: "100%", overflow: "scroll" }}
+              config={{ layout: "month_view", theme: "light" }}
             />
           </div>
         </div>
@@ -52,8 +65,8 @@ export default function BookDemo() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl w-full md:w-[60%] font-bold tracking-tighter mb-8 text-center">
-              Read our promise to you and the reasons behind why we&apos;re crafting
-              Kreative DocuVet
+              Read our promise to you and the reasons behind why we&apos;re
+              crafting Kreative DocuVet
             </h2>
             <div className="flex justify-start items-center">
               <motion.div
